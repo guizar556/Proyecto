@@ -1,0 +1,114 @@
+//Usar la base de datos 
+//Autor Jonathan Guizar Morales
+//Numero de control 22420408
+//Universdad:Tecnologico de Jiqulpan 
+//Poryecto cremeria
+use("Cremeria");
+
+db.productos.insertMany([
+    {
+        "codigo": 1,
+        "NombreDelProducto": "Queso Fresco",
+        "fecha_de_caducidad": "12/junio/2024",
+        "precioPorKilogramo": 150,
+        "condiciones_de_almacenamiento": "Refrigeración",
+        "nutrientes_que_Aporta": "P,C",
+        "Numero_De_lote_del_producto": 1023,
+        "stack_disponible": 100,
+        "margen_de_ganancia": 25,
+        "unidad_de_medida": "kilogramos",
+        "stock_minimo": 10,
+        "stock_maximo": 200,
+        "punto_de_reorden": 20,
+        "foto": "https://www.example.com/queso_fresco.jpg",
+        "Categoria": {
+            "NombreCategoria": "Lácteos",
+            "codigo": 1,
+            "foto": "https://www.example.com/lacteos.jpg"
+        }
+    },
+    {
+        "codigo": 2,
+        "NombreDelProducto": "Leche Deslactosada",
+        "fecha_de_caducidad": "30/julio/2024",
+        "precioPorKilogramo": 50,
+        "condiciones_de_almacenamiento": "Refrigeración",
+        "nutrientes_que_Aporta": "P,C",
+        "Numero_De_lote_del_producto": 2045,
+        "stack_disponible": 200,
+        "margen_de_ganancia": 18,
+        "unidad_de_medida": "litros",
+        "stock_minimo": 20,
+        "stock_maximo": 300,
+        "punto_de_reorden": 30,
+        "foto": "https://www.example.com/leche_deslactosada.jpg",
+        "Categoria": {
+            "NombreCategoria": "Bebidas",
+            "codigo": 2,
+            "foto": "https://www.example.com/bebidas.jpg"
+        }
+    },
+    {
+        "codigo": 3,
+        "NombreDelProducto": "Yogur Natural",
+        "fecha_de_caducidad": "18/mayo/2024",
+        "precioPorKilogramo": 75,
+        "condiciones_de_almacenamiento": "Refrigeración",
+        "nutrientes_que_Aporta": "P,C",
+        "Numero_De_lote_del_producto": 3050,
+        "stack_disponible": 134,
+        "margen_de_ganancia": 20,
+        "unidad_de_medida": "kilogramos",
+        "stock_minimo": 15,
+        "stock_maximo": 250,
+        "punto_de_reorden": 25,
+        "foto": "https://www.example.com/yogur_natural.jpg",
+        "Categoria": {
+            "NombreCategoria": "Aperitivos",
+            "codigo": 3,
+            "foto": "https://www.example.com/aperitivos.jpg"
+        }
+    },
+    {
+        "codigo": 4,
+        "NombreDelProducto": "Crema Agria",
+        "fecha_de_caducidad": "22/septiembre/2024",
+        "precioPorKilogramo": 85,
+        "condiciones_de_almacenamiento": "Refrigeración",
+        "nutrientes_que_Aporta": "C",
+        "Numero_De_lote_del_producto": 4067,
+        "stack_disponible": 109,
+        "margen_de_ganancia": 22,
+        "unidad_de_medida": "kilogramos",
+        "stock_minimo": 10,
+        "stock_maximo": 220,
+        "punto_de_reorden": 15,
+        "foto": "https://www.example.com/crema_agria.jpg",
+        "Categoria": {
+            "NombreCategoria": "Cereales",
+            "codigo": 4,
+            "foto": "https://www.example.com/cereales.jpg"
+        }
+    },
+    {
+        "codigo": 5,
+        "NombreDelProducto": "Mantequilla",
+        "fecha_de_caducidad": "14/octubre/2024",
+        "precioPorKilogramo": 180,
+        "condiciones_de_almacenamiento": "Refrigeración",
+        "nutrientes_que_Aporta": "C",
+        "Numero_De_lote_del_producto": 5073,
+        "stack_disponible": 70,
+        "margen_de_ganancia": 30,
+        "unidad_de_medida": "kilogramos",
+        "stock_minimo": 8,
+        "stock_maximo": 150,
+        "punto_de_reorden": 10,
+        "foto": "https://www.example.com/mantequilla.jpg",
+        "Categoria": {
+            "NombreCategoria": "Congelados",
+            "codigo": 5,
+            "foto": "https://www.example.com/congelados.jpg"
+        }
+    }
+]);

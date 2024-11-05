@@ -1,0 +1,63 @@
+// Usar la base de datos 
+// Autor: Jonathan Guizar Morales
+// Número de control: 22420408
+// Universidad: Tecnológico de Jiquilpan 
+// Proyecto: Cremería
+
+// Conectar y usar la base de datos Cremeria
+use("Cremeria");
+
+// Crear la colección con el esquema y validaciones si no existe
+// Usar la base de datos 
+// Autor: Jonathan Guizar Morales
+// Número de control: 22420408
+// Universidad: Tecnológico de Jiquilpan 
+// Proyecto: Cremería
+
+// Conectar y usar la base de datos Cremeria
+use("Cremeria");
+
+// Crear la colección con el esquema y validaciones si no existe
+db.createCollection('subcategorias', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: ['codigo', 'NombreDeSubcategoria', 'DescripcionDeSubcategoria', 'tipoDeRotacion', 'marca_de_la_subcategoria', 'foto', 'Categorias'],
+            properties: {
+                codigo: {
+                    bsonType: 'int'
+                },
+                NombreDeSubcategoria: {
+                    bsonType: 'string'
+                },
+                DescripcionDeSubcategoria: {
+                    bsonType: 'string'
+                },
+                tipoDeRotacion: {
+                    bsonType: 'string',
+                },
+                marca_de_la_subcategoria: {
+                    bsonType: 'string'
+                },
+                foto: {
+                    bsonType: 'string',
+                },
+                Categorias: {
+                    bsonType: 'object',
+                    required: ['NombreCategoria', 'codigo', 'foto'],
+                    properties: {
+                        NombreCategoria: {
+                            bsonType: 'string'
+                        },
+                        codigo: {
+                            bsonType: 'int'
+                        },
+                        foto: {
+                            bsonType: 'string',
+                        }
+                    }
+                }
+            }
+        }
+    }
+});

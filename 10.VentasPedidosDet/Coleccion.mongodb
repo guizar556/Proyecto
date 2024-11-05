@@ -1,0 +1,62 @@
+// Usar la base de datos 
+// Autor: Jonathan Guizar Morales
+// Número de control: 22420408
+// Universidad: Tecnológico de Jiquilpan 
+// Proyecto: Cremería
+
+// Conectar y usar la base de datos Cremeria
+use("Cremeria");
+
+// Crear la colección con el esquema y validaciones si no existe
+db.createCollection('Ventas', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: ['codigo', 'Fecha', 'descuento_aplicado', 'tipo_pago', 'det', 'Pedido'],
+            properties: {
+                codigo: { bsonType: 'int' },
+                Fecha: { 
+                    bsonType: 'string', 
+                    pattern: "^\\d{1,2}\\/\\w+\\/(19\\d{2}|20[0-4]\\d)$" 
+                },
+                descuento_aplicado: { 
+                    bsonType: 'int', 
+                    minimum: 0 
+                },
+                tipo_pago: { 
+                    bsonType: 'string', 
+                },
+                det: {
+                    bsonType: 'object',
+                    required: ['codigo', 'descripccion', 'precioUnitario', 'cantidad'],
+                    properties: {
+                        codigo: { bsonType: 'int' },
+                        descripccion: { 
+                            bsonType: 'string', 
+                            pattern: "^[A-Za-z0-9À-ÿ -]{5,100}$" 
+                        },
+                        precioUnitario: { 
+                            bsonType: 'int', 
+                            minimum: 0 
+                        },
+                        cantidad: { 
+                            bsonType: 'int', 
+                            minimum: 1 
+                        }
+                    }
+                },
+                Pedido: {
+                    bsonType: 'object',
+                    required: ['codigo', 'descripccion'],
+                    properties: {
+                        codigo: { bsonType: 'int' },
+                        descripccion: { 
+                            bsonType: 'string', 
+                            pattern: "^[A-Za-z0-9À-ÿ -]{5,200}$" 
+                        }
+                    }
+                }
+            }
+        }
+    }
+});

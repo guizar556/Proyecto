@@ -1,0 +1,76 @@
+//Usar la base de datos 
+//Autor Jonathan Guizar Morales
+//Numero de control 22420408
+//Universdad:Tecnologico de Jiqulpan 
+//Poryecto cremeria
+use("Cremeria");
+
+db.subcategorias.insertMany(
+    [
+        {
+            "codigo": 1,
+            "NombreDeSubcategoria": "Yogures",
+            "DescripcionDeSubcategoria": "Productos lácteos fermentados, ideales para el desayuno.",
+            "tipoDeRotacion": "Rápida",
+            "marca_de_la_subcategoria": "La Lechera",
+            "foto": "https://www.example.com/yogurt.jpg",
+            "Categorias": {
+                "NombreCategoria": "Lácteos",
+                "codigo": 1,
+                "foto": "https://www.example.com/lacteos.jpg"
+            }
+        },
+        {
+            "codigo": 2,
+            "NombreDeSubcategoria": "Refrescos",
+            "DescripcionDeSubcategoria": "Bebidas carbonatadas de diferentes sabores.",
+            "tipoDeRotacion": "Rápida",
+            "marca_de_la_subcategoria": "Coca-Cola",
+            "foto": "https://www.example.com/refrescos.jpg",
+            "Categorias": {
+                "NombreCategoria": "Bebidas",
+                "codigo": 2,
+                "foto": "https://www.example.com/bebidas.jpg"
+            }
+        },
+        {
+            "codigo": 3,
+            "NombreDeSubcategoria": "Frutos Secos",
+            "DescripcionDeSubcategoria": "Aperitivos saludables como almendras y nueces.",
+            "tipoDeRotacion": "Lenta",
+            "marca_de_la_subcategoria": "NutriSnack",
+            "foto": "https://www.example.com/frutos_secos.jpg",
+            "Categorias": {
+                "NombreCategoria": "Aperitivos",
+                "codigo": 3,
+                "foto": "https://www.example.com/aperitivos.jpg"
+            }
+        },
+        {
+            "codigo": 4,
+            "NombreDeSubcategoria": "Pasta",
+            "DescripcionDeSubcategoria": "Alimento básico en la dieta, disponible en varias formas.",
+            "tipoDeRotacion": "Rápida",
+            "marca_de_la_subcategoria": "Barilla",
+            "foto": "https://www.example.com/pasta.jpg",
+            "Categorias": {
+                "NombreCategoria": "Cereales",
+                "codigo": 4,
+                "foto": "https://www.example.com/cereales.jpg"
+            }
+        },
+        {
+            "codigo": 5,
+            "NombreDeSubcategoria": "Verduras Congeladas",
+            "DescripcionDeSubcategoria": "Vegetales congelados para una rápida preparación.",
+            "tipoDeRotacion": "Lenta",
+            "marca_de_la_subcategoria": "Green Garden",
+            "foto": "https://www.example.com/verduras_congeladas.jpg",
+            "Categorias": {
+                "NombreCategoria": "Congelados",
+                "codigo": 5,
+                "foto": "https://www.example.com/congelados.jpg"
+            }
+        }
+    ]
+);

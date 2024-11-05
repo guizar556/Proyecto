@@ -1,0 +1,51 @@
+//Usar la base de datos 
+//Autor Jonathan Guizar Morales
+//Numero de control 22420408
+//Universdad:Tecnologico de Jiqulpan 
+//Poryecto cremeria
+use("Cremeria");
+
+db.categorias.insertMany(
+    [
+        {
+            "codigo": 1,
+            "NombreDeCategoria": "Lácteos",
+            "DescripccionDeCategoria": "Productos derivados de la leche, como leche, queso y yogur.",
+            "estado_de_categoria_A_o_I": "Activa",
+            "fecha_creacion": "15/Enero/2024",
+            "foto": "https://www.cunat.com/wp-content/uploads/2022/03/lacteos-700x500.jpg"
+        },
+        {
+            "codigo": 2,
+            "NombreDeCategoria": "Bebidas",
+            "DescripccionDeCategoria": "Diversas bebidas como jugos, refrescos y aguas saborizadas.",
+            "estado_de_categoria_A_o_I": "Activa",
+            "fecha_creacion": "20/Febrero/2024",
+            "foto": "https://www.sabores.co/wp-content/uploads/2020/10/bebidas-700x500.jpg"
+        },
+        {
+            "codigo": 3,
+            "NombreDeCategoria": "Aperitivos",
+            "DescripccionDeCategoria": "Snacks y bocadillos, ideales para picar entre comidas.",
+            "estado_de_categoria_A_o_I": "Activa",
+            "fecha_creacion": "10/Marzo/2024",
+            "foto": "https://www.foodnetwork.com/recipes/images/recipe_squares/recipes-appetizers.jpg"
+        },
+        {
+            "codigo": 4,
+            "NombreDeCategoria": "Cereales",
+            "DescripccionDeCategoria": "Productos como avena, arroz y pastas, fundamentales en la dieta.",
+            "estado_de_categoria_A_o_I": "Activa",
+            "fecha_creacion": "25/Abril/2024",
+            "foto": "https://www.simplyrecipes.com/thmb/mFm58JZ-D09x5bQOgAlL_5T2LYU=/1500x0/filters:no_upscale%2Cmax_bytes(150000)%2Chigh_quality/Simply-Recipes-Cereal-LEAD-5-0d64503e67e84f69aaae75247c0337ec.jpg"
+        },
+        {
+            "codigo": 5,
+            "NombreDeCategoria": "Congelados",
+            "DescripccionDeCategoria": "Alimentos congelados para facilitar su conservación y preparación.",
+            "estado_de_categoria_A_o_I": "Activa",
+            "fecha_creacion": "5/Mayo/2024",
+            "foto": "https://www.falabella.com.co/falabella-co/dw/image/v2/BCCG_PRD/on/demandware.static/-/Sites-falabella-co/default/dwd6d98f18/images/5ccbd4819c3aa65967e2b2c1/5ccbd4819c3aa65967e2b2c1.jpg?sw=500&sh=500&sm=fit"
+        }
+    ]    
+);

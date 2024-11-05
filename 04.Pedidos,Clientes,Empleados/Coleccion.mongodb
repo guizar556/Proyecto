@@ -1,0 +1,81 @@
+// Usar la base de datos 
+// Autor: Jonathan Guizar Morales
+// Número de control: 22420408
+// Universidad: Tecnológico de Jiquilpan 
+// Proyecto: Cremería
+
+// Conectar y usar la base de datos Cremeria
+use("Cremeria");
+
+// Crear la colección con el esquema y validaciones si no existe
+db.createCollection('pedidos', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: ['codigo', 'fecha_pedido', 'Detalles', 'Empleados', 'Clientes', 'descripccion_Pedido'],
+            properties: {
+                codigo: { 
+                    bsonType: 'int' 
+                },
+                fecha_pedido: { 
+                    bsonType: 'string',
+                    pattern: "^\\d{1,2}\\/\\w+\\/(19\\d{2}|20[0-4]\\d)$" 
+                },
+                Detalles: {
+                    bsonType: 'object',
+                    required: ['codigoD', 'cantidad', 'precioUnitario', 'codigoProducto'],
+                    properties: {
+                        codigoD: { 
+                            bsonType: 'int' 
+                        },
+                        cantidad: { 
+                            bsonType: 'int' 
+                        },
+                        precioUnitario: { 
+                            bsonType: 'int' 
+                        },
+                        codigoProducto: { 
+                            bsonType: 'int' 
+                        }
+                    }
+                },
+                Empleados: {
+                    bsonType: 'object',
+                    properties: {
+                        CodigoEmpleado: { 
+                            bsonType: 'int' 
+                        },
+                        Nombres: { 
+                            bsonType: 'string' ,
+                            pattern: "^[a-zA-ZÁÉÍÓÚáéíóúÑñ ]{1,40}$" 
+                        },
+                        Apellidos: { 
+                            bsonType: 'string' ,
+                            pattern: "^[a-zA-ZÁÉÍÓÚáéíóúÑñ ]{1,40}$" 
+                        }
+                    }
+                },
+                Clientes: {
+                    bsonType: 'object',
+                    properties: {
+                        CodigoCliente: { 
+                            bsonType: 'int' 
+                        },
+                        Nombres: { 
+                            bsonType: 'string',
+                            pattern: "^[a-zA-ZÁÉÍÓÚáéíóúÑñ ]{1,40}$" 
+                        },
+                        Apellidos: { 
+                            bsonType: 'string',
+                            pattern: "^[a-zA-ZÁÉÍÓÚáéíóúÑñ ]{1,40}$" 
+                        }
+                    }
+                },
+                descripccion_Pedido: { 
+                    bsonType: 'string' 
+                }
+            }
+        }
+    }
+});
+

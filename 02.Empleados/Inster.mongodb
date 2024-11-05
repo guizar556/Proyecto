@@ -1,0 +1,95 @@
+//Usar la base de datos 
+//Autor Jonathan Guizar Morales
+//Numero de control 22420408
+//Universdad:Tecnologico de Jiqulpan 
+//Poryecto cremeria
+use("Cremeria");
+
+db.empleados.insertMany(
+    [
+        {
+            "codigo": 1,
+            "correo": "juan.martinez@gmail.com",
+            "Nombres": "Juan Carlos",
+            "Apellidos": "Martínez Pérez",
+            "Edad": 32,
+            "Address": {
+                "Localidad": "Sahuayo",
+                "Estado": "Michoacán",
+                "Colonia": "Centro",
+                "Avenida": "Avenida Reforma",
+                "NumeroVivienda": 123,
+                "CodigoPostal": 12345
+            },
+            "Telefono": "5551234567",
+            "FechaNacimiento": "12/enero/1992",
+            "recomendaciones": "Excelente en trabajo en equipo",
+            "FechaContratacion": "5/febrero/2020",
+            "Genero": "Masculino",
+            "foto": "https://www.ejemplo.com/foto1.jpg"
+        },
+        {
+            "codigo": 2,
+            "correo": "ana.lopez@gmail.com",
+            "Nombres": "Ana María",
+            "Apellidos": "López González",
+            "Edad": 28,
+            "Address": {
+                "Localidad": "Zamora",
+                "Estado": "Michoacán",
+                "Colonia": "San José",
+                "Avenida": "Calle Hidalgo",
+                "NumeroVivienda": 456,
+                "CodigoPostal": 67890
+            },
+            "Telefono": "5557654321",
+            "FechaNacimiento": "25/marzo/1996",
+            "recomendaciones": "Altamente recomendada por su anterior empleador",
+            "FechaContratacion": "10/marzo/2019",
+            "Genero": "Femenino",
+            "foto": "https://www.ejemplo.com/foto2.jpg"
+        },
+        {
+            "codigo": 3,
+            "correo": "pedro.hernandez@gmail.com",
+            "Nombres": "Pedro Antonio",
+            "Apellidos": "Hernández Sánchez",
+            "Edad": 40,
+            "Address": {
+                "Localidad": "Morelia",
+                "Estado": "Michoacán",
+                "Colonia": "Vista Hermosa",
+                "Avenida": "Calle Allende",
+                "NumeroVivienda": 789,
+                "CodigoPostal": 54321
+            },
+            "Telefono": "5559876543",
+            "FechaNacimiento": "30/abril/1984",
+            "recomendaciones": "Trabajador dedicado y eficiente",
+            "FechaContratacion": "15/junio/2018",
+            "Genero": "Masculino",
+            "foto": "https://www.ejemplo.com/foto3.jpg"
+        },
+        {
+            "codigo": 4,
+            "correo": "sofia.gomez@gmail.com",
+            "Nombres": "Sofía Elena",
+            "Apellidos": "Gómez Rodríguez",
+            "Edad": 35,
+            "Address": {
+                "Localidad": "Uruapan",
+                "Estado": "Michoacán",
+                "Colonia": "Los Pinos",
+                "Avenida": "Avenida Madero",
+                "NumeroVivienda": 321,
+                "CodigoPostal": 98765
+            },
+            "Telefono": "5552345678",
+            "FechaNacimiento": "10/mayo/1989",
+            "recomendaciones": "Liderazgo excelente en proyectos",
+            "FechaContratacion": "1/julio/2021",
+            "Genero": "Femenino",
+            "foto": "https://www.ejemplo.com/foto4.jpg"
+        }
+    ]
+);

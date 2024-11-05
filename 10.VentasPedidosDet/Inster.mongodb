@@ -1,0 +1,363 @@
+//Usar la base de datos 
+//Autor Jonathan Guizar Morales
+//Numero de control 22420408
+//Universdad:Tecnologico de Jiqulpan 
+//Poryecto cremeria
+use("Cremeria");
+
+db.Ventas.insertMany(
+    [
+        {
+            "codigo": 1,
+            "Fecha": "15/enero/2023",
+            "descuento_aplicado": 10,
+            "tipo_pago": "tarjeta",
+            "det": {
+                "codigo": 1,
+                "descripccion": "Queso Fresco - Venta al detalle",
+                "precioUnitario": 150,
+                "cantidad": 2
+            },
+            "Pedido": {
+                "codigo": 1,
+                "descripccion": "Compra de 50 productos lácteos"
+            }
+        },
+        {
+            "codigo": 1,
+            "Fecha": "15/enero/2023",
+            "descuento_aplicado": 10,
+            "tipo_pago": "tarjeta",
+            "det": {
+                "codigo": 2,
+                "descripccion": "Leche Deslactosada - Pack familiar",
+                "precioUnitario": 50,
+                "cantidad": 5
+            },
+            "Pedido": {
+                "codigo": 1,
+                "descripccion": "Compra de 50 productos lácteos"
+            }
+        },
+        {
+            "codigo": 2,
+            "Fecha": "18/febrero/2023",
+            "descuento_aplicado": 5,
+            "tipo_pago": "contado",
+            "det": {
+                "codigo": 3,
+                "descripccion": "Yogur Natural - Tarro grande",
+                "precioUnitario": 75,
+                "cantidad": 3
+            },
+            "Pedido": {
+                "codigo": 2,
+                "descripccion": "Pedido de 30 yogures naturales"
+            }
+        },
+        {
+            "codigo": 2,
+            "Fecha": "18/febrero/2023",
+            "descuento_aplicado": 5,
+            "tipo_pago": "contado",
+            "det": {
+                "codigo": 4,
+                "descripccion": "Crema Agria - Presentación pequeña",
+                "precioUnitario": 85,
+                "cantidad": 1
+            },
+            "Pedido": {
+                "codigo": 2,
+                "descripccion": "Pedido de 30 yogures naturales"
+            }
+        },
+        {
+            "codigo": 3,
+            "Fecha": "22/marzo/2023",
+            "descuento_aplicado": 0,
+            "tipo_pago": "crédito",
+            "det": {
+                "codigo": 5,
+                "descripccion": "Mantequilla - Barra",
+                "precioUnitario": 180,
+                "cantidad": 4
+            },
+            "Pedido": {
+                "codigo": 3,
+                "descripccion": "Compra de 100 litros de leche"
+            }
+        },
+        {
+            "codigo": 4,
+            "Fecha": "30/abril/2023",
+            "descuento_aplicado": 7,
+            "tipo_pago": "tarjeta",
+            "det": {
+                "codigo": 6,
+                "descripccion": "Queso Fresco - Venta al detalle",
+                "precioUnitario": 150,
+                "cantidad": 1
+            },
+            "Pedido": {
+                "codigo": 4,
+                "descripccion": "Pedido de 20 quesos artesanales"
+            }
+        },
+        {
+            "codigo": 5,
+            "Fecha": "12/mayo/2023",
+            "descuento_aplicado": 15,
+            "tipo_pago": "contado",
+            "det": {
+                "codigo": 7,
+                "descripccion": "Leche Deslactosada - Pack familiar",
+                "precioUnitario": 50,
+                "cantidad": 6
+            },
+            "Pedido": {
+                "codigo": 5,
+                "descripccion": "Compra de 50 cajas de crema"
+            }
+        },
+        {
+            "codigo": 5,
+            "Fecha": "12/mayo/2023",
+            "descuento_aplicado": 15,
+            "tipo_pago": "contado",
+            "det": {
+                "codigo": 8,
+                "descripccion": "Yogur Natural - Tarro grande",
+                "precioUnitario": 75,
+                "cantidad": 2
+            },
+            "Pedido": {
+                "codigo": 5,
+                "descripccion": "Compra de 50 cajas de crema"
+            }
+        },
+        {
+            "codigo": 6,
+            "Fecha": "5/junio/2023",
+            "descuento_aplicado": 8,
+            "tipo_pago": "tarjeta",
+            "det": {
+                "codigo": 9,
+                "descripccion": "Crema Agria - Presentación pequeña",
+                "precioUnitario": 85,
+                "cantidad": 3
+            },
+            "Pedido": {
+                "codigo": 6,
+                "descripccion": "Pedido de 10 litros de leche descremada"
+            }
+        },
+        {
+            "codigo": 6,
+            "Fecha": "5/junio/2023",
+            "descuento_aplicado": 8,
+            "tipo_pago": "tarjeta",
+            "det": {
+                "codigo": 10,
+                "descripccion": "Mantequilla - Barra",
+                "precioUnitario": 180,
+                "cantidad": 2
+            },
+            "Pedido": {
+                "codigo": 6,
+                "descripccion": "Pedido de 10 litros de leche descremada"
+            }
+        },
+        {
+            "codigo": 7,
+            "Fecha": "17/julio/2023",
+            "descuento_aplicado": 0,
+            "tipo_pago": "crédito",
+            "det": {
+                "codigo": 11,
+                "descripccion": "Queso Fresco - Venta al detalle",
+                "precioUnitario": 150,
+                "cantidad": 4
+            },
+            "Pedido": {
+                "codigo": 7,
+                "descripccion": "Pedido de 25 quesos frescos"
+            }
+        },
+        {
+            "codigo": 8,
+            "Fecha": "21/agosto/2023",
+            "descuento_aplicado": 10,
+            "tipo_pago": "contado",
+            "det": {
+                "codigo": 12,
+                "descripccion": "Leche Deslactosada - Pack familiar",
+                "precioUnitario": 50,
+                "cantidad": 3
+            },
+            "Pedido": {
+                "codigo": 8,
+                "descripccion": "Compra de 200 yogures saborizados"
+            }
+        },
+        {
+            "codigo": 9,
+            "Fecha": "29/septiembre/2023",
+            "descuento_aplicado": 12,
+            "tipo_pago": "tarjeta",
+            "det": {
+                "codigo": 13,
+                "descripccion": "Yogur Natural - Tarro grande",
+                "precioUnitario": 75,
+                "cantidad": 5
+            },
+            "Pedido": {
+                "codigo": 9,
+                "descripccion": "Pedido de 50 litros de leche entera"
+            }
+        },
+        {
+            "codigo": 10,
+            "Fecha": "9/octubre/2023",
+            "descuento_aplicado": 5,
+            "tipo_pago": "contado",
+            "det": {
+                "codigo": 14,
+                "descripccion": "Crema Agria - Presentación pequeña",
+                "precioUnitario": 85,
+                "cantidad": 2
+            },
+            "Pedido": {
+                "codigo": 10,
+                "descripccion": "Pedido de 80 cajas de crema agria"
+            }
+        },
+        {
+            "codigo": 10,
+            "Fecha": "9/octubre/2023",
+            "descuento_aplicado": 5,
+            "tipo_pago": "contado",
+            "det": {
+                "codigo": 15,
+                "descripccion": "Mantequilla - Barra",
+                "precioUnitario": 180,
+                "cantidad": 6
+            },
+            "Pedido": {
+                "codigo": 10,
+                "descripccion": "Pedido de 80 cajas de crema agria"
+            }
+        },
+        {
+            "codigo": 11,
+            "Fecha": "3/noviembre/2023",
+            "descuento_aplicado": 0,
+            "tipo_pago": "crédito",
+            "det": {
+                "codigo": 16,
+                "descripccion": "Queso Fresco - Venta al detalle",
+                "precioUnitario": 150,
+                "cantidad": 2
+            },
+            "Pedido": {
+                "codigo": 11,
+                "descripccion": "Pedido de 40 litros de leche de cabra"
+            }
+        },
+        {
+            "codigo": 12,
+            "Fecha": "15/diciembre/2023",
+            "descuento_aplicado": 10,
+            "tipo_pago": "tarjeta",
+            "det": {
+                "codigo": 17,
+                "descripccion": "Leche Deslactosada - Pack familiar",
+                "precioUnitario": 50,
+                "cantidad": 4
+            },
+            "Pedido": {
+                "codigo": 12,
+                "descripccion": "Compra de 150 yogures de frutas"
+            }
+        },
+        {
+            "codigo": 13,
+            "Fecha": "26/enero/2024",
+            "descuento_aplicado": 7,
+            "tipo_pago": "contado",
+            "det": {
+                "codigo": 18,
+                "descripccion": "Yogur Natural - Tarro grande",
+                "precioUnitario": 75,
+                "cantidad": 6
+            },
+            "Pedido": {
+                "codigo": 13,
+                "descripccion": "Pedido de 60 litros de leche sin lactosa"
+            }
+        },
+        {
+            "codigo": 14,
+            "Fecha": "6/febrero/2024",
+            "descuento_aplicado": 0,
+            "tipo_pago": "tarjeta",
+            "det": {
+                "codigo": 19,
+                "descripccion": "Crema Agria - Presentación pequeña",
+                "precioUnitario": 85,
+                "cantidad": 1
+            },
+            "Pedido": {
+                "codigo": 14,
+                "descripccion": "Pedido de 20 quesos maduros"
+            }
+        },
+        {
+            "codigo": 15,
+            "Fecha": "19/marzo/2024",
+            "descuento_aplicado": 12,
+            "tipo_pago": "crédito",
+            "det": {
+                "codigo": 20,
+                "descripccion": "Mantequilla - Barra",
+                "precioUnitario": 180,
+                "cantidad": 3
+            },
+            "Pedido": {
+                "codigo": 15,
+                "descripccion": "Compra de 90 yogures bajos en grasa"
+            }
+        },
+        {
+            "codigo": 21,
+            "Fecha": "10/Octubre/2024",
+            "descuento_aplicado": 5,
+            "tipo_pago": "Tarjeta de crédito",
+            "det": {
+                "codigo": 21,
+                "descripccion": "Venta de producto lácteo",
+                "precioUnitario": 45,
+                "cantidad": 10
+            },
+            "Pedido": {
+                "codigo": 5,
+                "descripccion": "Compra de 50 cajas de crema"
+            }
+        },
+        {
+            "codigo": 22,
+            "Fecha": "14/Octubre/2024",
+            "descuento_aplicado": 7,
+            "tipo_pago": "Tarjeta de crédito",
+            "det": {
+                "codigo": 22,
+                "descripccion": "Venta de producto lácteo",
+                "precioUnitario": 45,
+                "cantidad": 10
+            },
+            "Pedido": {
+                "codigo": 22,
+                "descripccion": "Pedido de productos lácteos y de panadería"
+            }
+        }
+    ]
+);

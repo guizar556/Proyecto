@@ -1,0 +1,95 @@
+// Usar la base de datos 
+// Autor: Jonathan Guizar Morales
+// Número de control: 22420408
+// Universidad: Tecnológico de Jiquilpan 
+// Proyecto: Cremería
+
+// Conectar y usar la base de datos Cremeria
+use("Cremeria");
+
+// Crear la colección con el esquema y validaciones si no existe
+db.createCollection('productos', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: [
+                'codigo', 
+                'NombreDelProducto', 
+                'fecha_de_caducidad', 
+                'precioPorKilogramo', 
+                'condiciones_de_almacenamiento', 
+                'nutrientes_que_Aporta', 
+                'Numero_De_lote_del_producto', 
+                'stack_disponible', 
+                'margen_de_ganancia', 
+                'unidad_de_medida', 
+                'stock_minimo', 
+                'stock_maximo', 
+                'punto_de_reorden', 
+                'foto', 
+                'Categoria'
+            ],
+            properties: {
+                codigo: {
+                    bsonType: 'int'
+                },
+                NombreDelProducto: {
+                    bsonType: 'string'
+                },
+                fecha_de_caducidad: {
+                    bsonType: 'string',
+                    pattern: '^\\d{1,2}\\/\\w+\\/\\d{4}$'
+                },
+                precioPorKilogramo: {
+                    bsonType: 'int'
+                },
+                condiciones_de_almacenamiento: {
+                    bsonType: 'string'
+                },
+                nutrientes_que_Aporta: {
+                    bsonType: 'string',
+                },
+
+                Numero_De_lote_del_producto: {
+                    bsonType: 'int'
+                },
+                stack_disponible: {
+                    bsonType: 'int'
+                },
+                margen_de_ganancia: {
+                    bsonType: 'int'
+                },
+                unidad_de_medida: {
+                    bsonType: 'string'
+                },
+                stock_minimo: {
+                    bsonType: 'int'
+                },
+                stock_maximo: {
+                    bsonType: 'int'
+                },
+                punto_de_reorden: {
+                    bsonType: 'int'
+                },
+                foto: {
+                    bsonType: 'string'
+                },
+                Categoria: {
+                    bsonType: 'object',
+                    required: ['NombreCategoria', 'codigo', 'foto'],
+                    properties: {
+                        NombreCategoria: {
+                            bsonType: 'string'
+                        },
+                        codigo: {
+                            bsonType: 'int'
+                        },
+                        foto: {
+                            bsonType: 'string'
+                        }
+                    }
+                }
+            }
+        }
+    }
+});

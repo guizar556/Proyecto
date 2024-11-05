@@ -1,0 +1,51 @@
+// Usar la base de datos 
+// Autor: Jonathan Guizar Morales
+// Número de control: 22420408
+// Universidad: Tecnológico de Jiquilpan 
+// Proyecto: Cremería
+
+// Conectar y usar la base de datos Cremeria
+use("Cremeria");
+
+// Crear la colección con el esquema y validaciones si no existe
+// Usar la base de datos 
+// Autor: Jonathan Guizar Morales
+// Número de control: 22420408
+// Universidad: Tecnológico de Jiquilpan 
+// Proyecto: Cremería
+
+// Conectar y usar la base de datos Cremeria
+use("Cremeria");
+
+// Crear la colección con el esquema y validaciones si no existe
+db.createCollection('categorias', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: ['codigo', 'NombreDeCategoria', 'DescripccionDeCategoria', 'estado_de_categoria_A_o_I', 'fecha_creacion', 'foto'],
+            properties: {
+                codigo: {
+                    bsonType: 'int'
+                },
+                NombreDeCategoria: {
+                    bsonType: 'string'
+                },
+                DescripccionDeCategoria: {
+                    bsonType: 'string'
+                },
+                estado_de_categoria_A_o_I: {
+                    bsonType: 'string',
+                    enum: ['Activa', 'Inactiva'] 
+                },
+                fecha_creacion: {
+                    bsonType: 'string',
+                    pattern: '^\\d{1,2}\\/\\w+\\/\\d{4}$'
+                },
+                foto: {
+                    bsonType: 'string',
+                }
+            }
+        }
+    }
+});
+

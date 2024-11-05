@@ -1,0 +1,83 @@
+// Usar la base de datos 
+// Autor: Jonathan Guizar Morales
+// Número de control: 22420408
+// Universidad: Tecnológico de Jiquilpan 
+// Proyecto: Cremería
+
+use("Cremeria");
+
+
+db.createCollection('clientes', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: ['codigo', 'correo', 'Telefono', 'Genero', 'CodigoPostal', 'Nombres', 'Apellidos', 'Edad', 'Address', 'Fecha'],
+            properties: {
+                codigo: { 
+                    bsonType: 'int' 
+                },
+                correo: { 
+                    bsonType: 'string', 
+                    pattern: ".*@.*\\..*" 
+                },
+                Telefono: { 
+                    bsonType: 'string', 
+                    pattern: "^\\d{7,15}$" 
+                },
+                Genero: { 
+                    bsonType: 'string', 
+                    enum: ['Masculino', 'Femenino', 'Otro'] 
+                },
+                CodigoPostal: { 
+                    bsonType: 'string', 
+                    pattern: "^\\d{5,10}$" 
+                },
+                Nombres: { 
+                    bsonType: 'string', 
+                    pattern: "^.{1,90}$" 
+                },
+                Apellidos: { 
+                    bsonType: 'string', 
+                    pattern: "^.{1,60}$" 
+                },
+                Edad: { 
+                    bsonType: 'int', 
+                    minimum: 0, 
+                    maximum: 120 
+                },
+                Address: {
+                    bsonType: 'object',
+                    required: ['Localidad', 'Estado', 'Colonia', 'Avenida', 'NumeroVivienda'],
+                    properties: {
+                        Localidad: { 
+                            bsonType: 'string', 
+                            pattern: "^.{1,40}$" 
+                        },
+                        Estado: { 
+                            bsonType: 'string', 
+                            pattern: "^.{1,40}$" 
+                        },
+                        Colonia: { 
+                            bsonType: 'string', 
+                            pattern: "^.{1,45}$" 
+                        },
+                        Avenida: { 
+                            bsonType: 'string', 
+                            pattern: "^.{1,50}$" 
+                        },
+                        NumeroVivienda: { 
+                            bsonType: 'int', 
+                            minimum: 1 
+                        }
+                    }
+                },
+                Fecha: { 
+                    bsonType: 'string', 
+                    pattern: "^\\d{1,2}\\/\\w+\\/(19\\d{2}|20[0-4]\\d)$" 
+                }
+            }
+        }
+    }
+});
+
+

@@ -1,0 +1,67 @@
+// Usar la base de datos 
+// Autor: Jonathan Guizar Morales
+// Número de control: 22420408
+// Universidad: Tecnológico de Jiquilpan 
+// Proyecto: Cremería
+
+// Conectar y usar la base de datos Cremeria
+use("Cremeria");
+
+// Crear la colección con el esquema y validaciones si no existe
+db.createCollection('transportes', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: [
+                'codigo',
+                'NumeroDePlaca',
+                'Marca',
+                'Modelo',
+                'Provedores',
+                'Foto'
+            ],
+            properties: {
+                codigo: {
+                    bsonType: 'int',
+                    description: "Código único del vehículo, debe ser un entero y es obligatorio"
+                },
+                NumeroDePlaca: {
+                    bsonType: 'string',
+                    pattern: "^[A-Z]{3}-[0-9]{3}$", 
+                    description: "Número de placa del vehículo, debe ser una cadena con formato AAA-123 y es obligatorio"
+                },
+                Marca: {
+                    bsonType: 'string',
+                    description: "Marca del vehículo, debe ser una cadena y es obligatorio"
+                },
+                Modelo: {
+                    bsonType: 'string',
+                    description: "Modelo del vehículo, debe ser una cadena y es obligatorio"
+                },
+                Provedores: {
+                    bsonType: 'object',
+                    required: ['Nombres', 'Apellidos', 'codigo'],
+                    properties: {
+                        Nombres: {
+                            bsonType: 'string',
+                            description: "Nombre del proveedor, debe ser una cadena y es obligatorio"
+                        },
+                        Apellidos: {
+                            bsonType: 'string',
+                            description: "Apellidos del proveedor, debe ser una cadena y es obligatorio"
+                        },
+                        codigo: {
+                            bsonType: 'int',
+                            description: "Código único del proveedor, debe ser un entero y es obligatorio"
+                        }
+                    }
+                },
+                Foto: {
+                    bsonType: 'string',
+                    pattern: "^https?://.+",
+                    description: "URL de la foto del vehículo, debe ser una cadena que comience con 'http://' o 'https://' y es obligatorio"
+                }
+            }
+        }
+    }
+});

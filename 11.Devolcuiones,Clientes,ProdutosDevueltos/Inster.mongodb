@@ -1,0 +1,410 @@
+//Usar la base de datos 
+//Autor Jonathan Guizar Morales
+//Numero de control 22420408
+//Universdad:Tecnologico de Jiqulpan 
+//Poryecto cremeria
+use("Cremeria");
+
+db.Devoluciones.insertMany(
+    [
+        {
+            "codigo": 1,
+            "CantidadDeProductosDevueltos": 2,
+            "Descripccion": "Producto con fecha de caducidad vencida",
+            "FechaDevolcion": "12\/Septiembre\/2024",
+            "montoDeRembolso": 300,
+            "hora": "14:30:00",
+            "DescripccionDeMedidasTomadas": "Reembolso completo y entrega de productos nuevos",
+            "Cliente": {
+                "codigo": 1,
+                "Nombres": "Juan Carlos",
+                "Apellidos": "Gómez Pérez"
+            },
+            "ProductoDevuelto": {
+                "codigo": 1,
+                "codigo_VP": 1,
+                "Observaciones": "Producto con fecha de caducidad vencida, debe ser retirado."
+            }
+        },
+        {
+            "codigo": 1,
+            "CantidadDeProductosDevueltos": 2,
+            "Descripccion": "Producto con fecha de caducidad vencida",
+            "FechaDevolcion": "12\/Septiembre\/2024",
+            "montoDeRembolso": 300,
+            "hora": "14:30:00",
+            "DescripccionDeMedidasTomadas": "Reembolso completo y entrega de productos nuevos",
+            "Cliente": {
+                "codigo": 1,
+                "Nombres": "Juan Carlos",
+                "Apellidos": "Gómez Pérez"
+            },
+            "ProductoDevuelto": {
+                "codigo": 2,
+                "codigo_VP": 2,
+                "Observaciones": "Envase dañado, necesita reemplazo."
+            }
+        },
+        {
+            "codigo": 2,
+            "CantidadDeProductosDevueltos": 1,
+            "Descripccion": "Envase dañado en el transporte",
+            "FechaDevolcion": "15\/Septiembre\/2024",
+            "montoDeRembolso": 150,
+            "hora": "10:45:00",
+            "DescripccionDeMedidasTomadas": "Se reemplazó el producto dañado por uno en buen estado",
+            "Cliente": {
+                "codigo": 2,
+                "Nombres": "María Luisa",
+                "Apellidos": "López Ramírez"
+            },
+            "ProductoDevuelto": {
+                "codigo": 3,
+                "codigo_VP": 3,
+                "Observaciones": "Producto incorrecto, el cliente recibió un sabor diferente."
+            }
+        },
+        {
+            "codigo": 2,
+            "CantidadDeProductosDevueltos": 1,
+            "Descripccion": "Envase dañado en el transporte",
+            "FechaDevolcion": "15\/Septiembre\/2024",
+            "montoDeRembolso": 150,
+            "hora": "10:45:00",
+            "DescripccionDeMedidasTomadas": "Se reemplazó el producto dañado por uno en buen estado",
+            "Cliente": {
+                "codigo": 2,
+                "Nombres": "María Luisa",
+                "Apellidos": "López Ramírez"
+            },
+            "ProductoDevuelto": {
+                "codigo": 4,
+                "codigo_VP": 4,
+                "Observaciones": "El producto estaba en mal estado al recibirlo."
+            }
+        },
+        {
+            "codigo": 3,
+            "CantidadDeProductosDevueltos": 3,
+            "Descripccion": "Pedido incorrecto, cliente recibió otro producto",
+            "FechaDevolcion": "18\/Agosto\/2024",
+            "montoDeRembolso": 450,
+            "hora": "16:20:00",
+            "DescripccionDeMedidasTomadas": "Se corrigió el pedido y se devolvieron los productos correctos",
+            "Cliente": {
+                "codigo": 3,
+                "Nombres": "Pedro Antonio",
+                "Apellidos": "Martínez Díaz"
+            },
+            "ProductoDevuelto": {
+                "codigo": 5,
+                "codigo_VP": 5,
+                "Observaciones": "Falta el etiquetado, se debe corregir."
+            }
+        },
+        {
+            "codigo": 3,
+            "CantidadDeProductosDevueltos": 3,
+            "Descripccion": "Pedido incorrecto, cliente recibió otro producto",
+            "FechaDevolcion": "18\/Agosto\/2024",
+            "montoDeRembolso": 450,
+            "hora": "16:20:00",
+            "DescripccionDeMedidasTomadas": "Se corrigió el pedido y se devolvieron los productos correctos",
+            "Cliente": {
+                "codigo": 3,
+                "Nombres": "Pedro Antonio",
+                "Apellidos": "Martínez Díaz"
+            },
+            "ProductoDevuelto": {
+                "codigo": 6,
+                "codigo_VP": 1,
+                "Observaciones": "Producto devuelto debido a insatisfacción del cliente."
+            }
+        },
+        {
+            "codigo": 4,
+            "CantidadDeProductosDevueltos": 1,
+            "Descripccion": "Producto en mal estado, mala refrigeración",
+            "FechaDevolcion": "22\/Julio\/2024",
+            "montoDeRembolso": 200,
+            "hora": "09:10:00",
+            "DescripccionDeMedidasTomadas": "Se ofreció reembolso parcial y productos en buen estado",
+            "Cliente": {
+                "codigo": 4,
+                "Nombres": "Ana Sofía",
+                "Apellidos": "Hernández Sánchez"
+            },
+            "ProductoDevuelto": {
+                "codigo": 7,
+                "codigo_VP": 2,
+                "Observaciones": "El producto presenta mal olor, no apto para consumo."
+            }
+        },
+        {
+            "codigo": 4,
+            "CantidadDeProductosDevueltos": 1,
+            "Descripccion": "Producto en mal estado, mala refrigeración",
+            "FechaDevolcion": "22\/Julio\/2024",
+            "montoDeRembolso": 200,
+            "hora": "09:10:00",
+            "DescripccionDeMedidasTomadas": "Se ofreció reembolso parcial y productos en buen estado",
+            "Cliente": {
+                "codigo": 4,
+                "Nombres": "Ana Sofía",
+                "Apellidos": "Hernández Sánchez"
+            },
+            "ProductoDevuelto": {
+                "codigo": 8,
+                "codigo_VP": 3,
+                "Observaciones": "Requiere revisión de calidad, cliente insatisfecho."
+            }
+        },
+        {
+            "codigo": 5,
+            "CantidadDeProductosDevueltos": 4,
+            "Descripccion": "Cliente insatisfecho con la calidad del producto",
+            "FechaDevolcion": "25\/Junio\/2024",
+            "montoDeRembolso": 500,
+            "hora": "13:55:00",
+            "DescripccionDeMedidasTomadas": "Reembolso completo y revisión del lote de productos",
+            "Cliente": {
+                "codigo": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "ProductoDevuelto": {
+                "codigo": 9,
+                "codigo_VP": 4,
+                "Observaciones": "Envase roto, necesita un nuevo embalaje."
+            }
+        },
+        {
+            "codigo": 5,
+            "CantidadDeProductosDevueltos": 4,
+            "Descripccion": "Cliente insatisfecho con la calidad del producto",
+            "FechaDevolcion": "25\/Junio\/2024",
+            "montoDeRembolso": 500,
+            "hora": "13:55:00",
+            "DescripccionDeMedidasTomadas": "Reembolso completo y revisión del lote de productos",
+            "Cliente": {
+                "codigo": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "ProductoDevuelto": {
+                "codigo": 10,
+                "codigo_VP": 5,
+                "Observaciones": "No coincide con la descripción del pedido."
+            }
+        },
+        {
+            "codigo": 1,
+            "CantidadDeProductosDevueltos": 2,
+            "Descripccion": "Producto con fecha de caducidad vencida",
+            "FechaDevolcion": "12\/Septiembre\/2024",
+            "montoDeRembolso": 300,
+            "hora": "14:30:00",
+            "DescripccionDeMedidasTomadas": "Reembolso completo y entrega de productos nuevos",
+            "Cliente": {
+                "codigo": 1,
+                "Nombres": "Juan Carlos",
+                "Apellidos": "Gómez Pérez"
+            },
+            "ProductoDevuelto": {
+                "codigo": 11,
+                "codigo_VP": 1,
+                "Observaciones": "Producto fue devuelto por problemas de calidad."
+            }
+        },
+        {
+            "codigo": 1,
+            "CantidadDeProductosDevueltos": 2,
+            "Descripccion": "Producto con fecha de caducidad vencida",
+            "FechaDevolcion": "12\/Septiembre\/2024",
+            "montoDeRembolso": 300,
+            "hora": "14:30:00",
+            "DescripccionDeMedidasTomadas": "Reembolso completo y entrega de productos nuevos",
+            "Cliente": {
+                "codigo": 1,
+                "Nombres": "Juan Carlos",
+                "Apellidos": "Gómez Pérez"
+            },
+            "ProductoDevuelto": {
+                "codigo": 12,
+                "codigo_VP": 2,
+                "Observaciones": "Se debe mejorar el proceso de embalaje."
+            }
+        },
+        {
+            "codigo": 2,
+            "CantidadDeProductosDevueltos": 1,
+            "Descripccion": "Envase dañado en el transporte",
+            "FechaDevolcion": "15\/Septiembre\/2024",
+            "montoDeRembolso": 150,
+            "hora": "10:45:00",
+            "DescripccionDeMedidasTomadas": "Se reemplazó el producto dañado por uno en buen estado",
+            "Cliente": {
+                "codigo": 2,
+                "Nombres": "María Luisa",
+                "Apellidos": "López Ramírez"
+            },
+            "ProductoDevuelto": {
+                "codigo": 13,
+                "codigo_VP": 3,
+                "Observaciones": "Se solicita el reembolso por el estado del producto."
+            }
+        },
+        {
+            "codigo": 2,
+            "CantidadDeProductosDevueltos": 1,
+            "Descripccion": "Envase dañado en el transporte",
+            "FechaDevolcion": "15\/Septiembre\/2024",
+            "montoDeRembolso": 150,
+            "hora": "10:45:00",
+            "DescripccionDeMedidasTomadas": "Se reemplazó el producto dañado por uno en buen estado",
+            "Cliente": {
+                "codigo": 2,
+                "Nombres": "María Luisa",
+                "Apellidos": "López Ramírez"
+            },
+            "ProductoDevuelto": {
+                "codigo": 14,
+                "codigo_VP": 4,
+                "Observaciones": "Faltan instrucciones en el empaque."
+            }
+        },
+        {
+            "codigo": 3,
+            "CantidadDeProductosDevueltos": 3,
+            "Descripccion": "Pedido incorrecto, cliente recibió otro producto",
+            "FechaDevolcion": "18\/Agosto\/2024",
+            "montoDeRembolso": 450,
+            "hora": "16:20:00",
+            "DescripccionDeMedidasTomadas": "Se corrigió el pedido y se devolvieron los productos correctos",
+            "Cliente": {
+                "codigo": 3,
+                "Nombres": "Pedro Antonio",
+                "Apellidos": "Martínez Díaz"
+            },
+            "ProductoDevuelto": {
+                "codigo": 15,
+                "codigo_VP": 5,
+                "Observaciones": "Devolver producto defectuoso al proveedor."
+            }
+        },
+        {
+            "codigo": 3,
+            "CantidadDeProductosDevueltos": 3,
+            "Descripccion": "Pedido incorrecto, cliente recibió otro producto",
+            "FechaDevolcion": "18\/Agosto\/2024",
+            "montoDeRembolso": 450,
+            "hora": "16:20:00",
+            "DescripccionDeMedidasTomadas": "Se corrigió el pedido y se devolvieron los productos correctos",
+            "Cliente": {
+                "codigo": 3,
+                "Nombres": "Pedro Antonio",
+                "Apellidos": "Martínez Díaz"
+            },
+            "ProductoDevuelto": {
+                "codigo": 16,
+                "codigo_VP": 1,
+                "Observaciones": "El producto debe ser reemplazado por otro nuevo."
+            }
+        },
+        {
+            "codigo": 4,
+            "CantidadDeProductosDevueltos": 1,
+            "Descripccion": "Producto en mal estado, mala refrigeración",
+            "FechaDevolcion": "22\/Julio\/2024",
+            "montoDeRembolso": 200,
+            "hora": "09:10:00",
+            "DescripccionDeMedidasTomadas": "Se ofreció reembolso parcial y productos en buen estado",
+            "Cliente": {
+                "codigo": 4,
+                "Nombres": "Ana Sofía",
+                "Apellidos": "Hernández Sánchez"
+            },
+            "ProductoDevuelto": {
+                "codigo": 17,
+                "codigo_VP": 2,
+                "Observaciones": "Se encuentra en condiciones no adecuadas para la venta."
+            }
+        },
+        {
+            "codigo": 4,
+            "CantidadDeProductosDevueltos": 1,
+            "Descripccion": "Producto en mal estado, mala refrigeración",
+            "FechaDevolcion": "22\/Julio\/2024",
+            "montoDeRembolso": 200,
+            "hora": "09:10:00",
+            "DescripccionDeMedidasTomadas": "Se ofreció reembolso parcial y productos en buen estado",
+            "Cliente": {
+                "codigo": 4,
+                "Nombres": "Ana Sofía",
+                "Apellidos": "Hernández Sánchez"
+            },
+            "ProductoDevuelto": {
+                "codigo": 18,
+                "codigo_VP": 3,
+                "Observaciones": "Mal manejo en el transporte, producto dañado."
+            }
+        },
+        {
+            "codigo": 5,
+            "CantidadDeProductosDevueltos": 4,
+            "Descripccion": "Cliente insatisfecho con la calidad del producto",
+            "FechaDevolcion": "25\/Junio\/2024",
+            "montoDeRembolso": 500,
+            "hora": "13:55:00",
+            "DescripccionDeMedidasTomadas": "Reembolso completo y revisión del lote de productos",
+            "Cliente": {
+                "codigo": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "ProductoDevuelto": {
+                "codigo": 19,
+                "codigo_VP": 4,
+                "Observaciones": "Devolución por insatisfacción, producto no cumple expectativas."
+            }
+        },
+        {
+            "codigo": 5,
+            "CantidadDeProductosDevueltos": 4,
+            "Descripccion": "Cliente insatisfecho con la calidad del producto",
+            "FechaDevolcion": "25\/Junio\/2024",
+            "montoDeRembolso": 500,
+            "hora": "13:55:00",
+            "DescripccionDeMedidasTomadas": "Reembolso completo y revisión del lote de productos",
+            "Cliente": {
+                "codigo": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "ProductoDevuelto": {
+                "codigo": 20,
+                "codigo_VP": 5,
+                "Observaciones": "Solicitar revisión de lote de productos devueltos."
+            }
+        },
+        {
+            "codigo": 5,
+            "CantidadDeProductosDevueltos": 4,
+            "Descripccion": "Cliente insatisfecho con la calidad del producto",
+            "FechaDevolcion": "25\/Junio\/2024",
+            "montoDeRembolso": 500,
+            "hora": "13:55:00",
+            "DescripccionDeMedidasTomadas": "Reembolso completo y revisión del lote de productos",
+            "Cliente": {
+                "codigo": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "ProductoDevuelto": {
+                "codigo": 23,
+                "codigo_VP": 3,
+                "Observaciones": "Producto devuelto debido a un defecto de fabricación."
+            }
+        }
+    ]
+);

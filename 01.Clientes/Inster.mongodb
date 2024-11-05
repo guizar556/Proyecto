@@ -1,0 +1,101 @@
+//Usar la base de datos 
+//Autor Jonathan Guizar Morales
+//Numero de control 22420408
+//Universdad:Tecnologico de Jiqulpan 
+//Poryecto cremeria
+use("Cremeria");
+
+db.clientes.insertMany(
+    [
+        {
+            "codigo": 1,
+            "correo": "juan.gomez@gmail.com",
+            "Telefono": "5551231234",
+            "Genero": "Masculino",
+            "CodigoPostal": "12345",
+            "Nombres": "Juan Carlos",
+            "Apellidos": "Gómez Pérez",
+            "Edad": 30,
+            "Address": {
+                "Localidad": "Sahuayo",
+                "Estado": "Michoacán",
+                "Colonia": "Centro",
+                "Avenida": "Avenida Reforma",
+                "NumeroVivienda": 123
+            },
+            "Fecha": "15\/enero\/1994"
+        },
+        {
+            "codigo": 2,
+            "correo": "maria.lopez@gmail.com",
+            "Telefono": "5555435678",
+            "Genero": "Femenino",
+            "CodigoPostal": "67890",
+            "Nombres": "María Luisa",
+            "Apellidos": "López Ramírez",
+            "Edad": 25,
+            "Address": {
+                "Localidad": "Zamora",
+                "Estado": "Michoacán",
+                "Colonia": "San José",
+                "Avenida": "Calle Hidalgo",
+                "NumeroVivienda": 456
+            },
+            "Fecha": "23\/marzo\/1999"
+        },
+        {
+            "codigo": 3,
+            "correo": "pedro.martinez@gmail.com",
+            "Telefono": "5555438765",
+            "Genero": "Masculino",
+            "CodigoPostal": "54321",
+            "Nombres": "Pedro Antonio",
+            "Apellidos": "Martínez Díaz",
+            "Edad": 28,
+            "Address": {
+                "Localidad": "Morelia",
+                "Estado": "Michoacán",
+                "Colonia": "Vista Hermosa",
+                "Avenida": "Calle Allende",
+                "NumeroVivienda": 789
+            },
+            "Fecha": "12\/abril\/1996"
+        },
+        {
+            "codigo": 4,
+            "correo": "ana.hernandez@gmail.com",
+            "Telefono": "5553452345",
+            "Genero": "Femenino",
+            "CodigoPostal": "09876",
+            "Nombres": "Ana Sofía",
+            "Apellidos": "Hernández Sánchez",
+            "Edad": 35,
+            "Address": {
+                "Localidad": "Uruapan",
+                "Estado": "Michoacán",
+                "Colonia": "Los Pinos",
+                "Avenida": "Avenida Madero",
+                "NumeroVivienda": 321
+            },
+            "Fecha": "6\/mayo\/1989"
+        },
+        {
+            "codigo": 5,
+            "correo": "luis.castro@gmail.com",
+            "Telefono": "5553423456",
+            "Genero": "Masculino",
+            "CodigoPostal": "65432",
+            "Nombres": "Luis Fernando",
+            "Apellidos": "Castro Ortiz",
+            "Edad": 40,
+            "Address": {
+                "Localidad": "Pátzcuaro",
+                "Estado": "Michoacán",
+                "Colonia": "La Estancia",
+                "Avenida": "Calle Benito Juárez",
+                "NumeroVivienda": 654
+            },
+            "Fecha": "18\/julio\/1984"
+        }
+    ]
+);

@@ -1,0 +1,76 @@
+//Usar la base de datos 
+//Autor Jonathan Guizar Morales
+//Numero de control 22420408
+//Universdad:Tecnologico de Jiqulpan 
+//Poryecto cremeria
+use("Cremeria");
+
+db.transportes.insertMany(
+    [
+        {
+            "codigo": 1,
+            "NumeroDePlaca": "ABC-123",
+            "Marca": "Chevrolet",
+            "Modelo": "Sonic",
+            "DescripccionDelVehiculo": "Vehículo compacto ideal para ciudad.",
+            "Provedores": {
+                "Nombres": "Juan Pablo",
+                "Apellidos": "González Hernández",
+                "codigo": 1
+            },
+             "Foto": "https://example.com/images/nissan-versa.jpg"
+        },
+        {
+            "codigo": 2,
+            "NumeroDePlaca": "DEF-456",
+            "Marca": "Nissan",
+            "Modelo": "Versa",
+            "DescripccionDelVehiculo": "Sedán eficiente y cómodo para viajes largos.",
+            "Provedores": {
+                "Nombres": "María José",
+                "Apellidos": "López Pérez",
+                "codigo": 2
+            },
+             "Foto": "https://example.com/images/nissan-versa.jpg"
+        },
+        {
+            "codigo": 3,
+            "NumeroDePlaca": "GHI-789",
+            "Marca": "Ford",
+            "Modelo": "Fiesta",
+            "DescripccionDelVehiculo": "Vehículo ágil y económico para el uso diario.",
+            "Provedores": {
+                "Nombres": "Carlos ",
+                "Apellidos": "Ramírez Soto",
+                "codigo": 3
+            },
+             "Foto": "https://example.com/images/nissan-versa.jpg"
+        },
+        {
+            "codigo": 4,
+            "NumeroDePlaca": "JKL-012",
+            "Marca": "Volkswagen",
+            "Modelo": "Jetta",
+            "DescripccionDelVehiculo": "Sedán de alta eficiencia y confort.",
+            "Provedores": {
+                "Nombres": "Sofía Elizabeth",
+                "Apellidos": "Martínez García",
+                "codigo": 4
+            },
+             "Foto": "https://example.com/images/nissan-versa.jpg"
+        },
+        {
+            "codigo": 5,
+            "NumeroDePlaca": "MNO-345",
+            "Marca": "Toyota",
+            "Modelo": "Corolla",
+            "DescripccionDelVehiculo": "Confiable y duradero, ideal para familias.",
+            "Provedores": {
+                "Nombres": "Luis Antonio",
+                "Apellidos": "Fernández Díaz",
+                "codigo": 5
+            },
+             "Foto": "https://example.com/images/nissan-versa.jpg"
+        }
+    ]
+);

@@ -1,0 +1,76 @@
+// Usar la base de datos 
+// Autor: Jonathan Guizar Morales
+// Número de control: 22420408
+// Universidad: Tecnológico de Jiquilpan 
+// Proyecto: Cremería
+
+// Conectar y usar la base de datos Cremeria
+use("Cremeria");
+
+// Crear la colección con el esquema y validaciones si no existe
+use("Cremeria");
+
+db.createCollection('Compras', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: ['codigo', 'tipoDeCompra', 'Total_de_Compra', 'FechaCompra', 'estado_compra', 'Provedores', 'Dt'],
+            properties: {
+                codigo: { bsonType: 'int' },
+                tipoDeCompra: { 
+                    bsonType: 'string', 
+                    enum: ["Contado", "Crédito"],
+                },
+                Total_de_Compra: { 
+                    bsonType: 'int',
+                    minimum: 0 
+                },
+                FechaCompra: { 
+                    bsonType: 'string',
+                    pattern: "^\\d{1,2}\\/\\w+\\/(19\\d{2}|20[0-4]\\d)$" 
+                },
+                estado_compra: { 
+                    bsonType: 'string', 
+                    enum: ["Completada", "Pendiente", "Cancelada"]
+                },
+                Provedores: {
+                    bsonType: 'object',
+                    required: ['codigo', 'Nombres', 'Apellidos'],
+                    properties: {
+                        codigo: { bsonType: 'int' },
+                        Nombres: { 
+                            bsonType: 'string', 
+                            pattern: "^[A-Za-zÀ-ÿ ]{2,50}$" 
+                        },
+                        Apellidos: { 
+                            bsonType: 'string', 
+                            pattern: "^[A-Za-zÀ-ÿ ]{2,50}$" 
+                        }
+                    }
+                },
+                Dt: {
+                    bsonType: 'object',
+                    required: ['catidadProductos', 'PrecioUnitario', 'codigo', 'Descripccion', 'CodifoProducto'],
+                    properties: {
+                        catidadProductos: { 
+                            bsonType: 'int', 
+                            minimum: 1 
+                        },
+                        PrecioUnitario: { 
+                            bsonType: 'int', 
+                            minimum: 0 
+                        },
+                        codigo: { bsonType: 'int' },
+                        Descripccion: { 
+                            bsonType: 'string', 
+                            pattern: "^[A-Za-z0-9À-ÿ ]{5,200}$" 
+                        },
+                        CodifoProducto: { 
+                            bsonType: 'int' 
+                        }
+                    }
+                }
+            }
+        }
+    }
+});

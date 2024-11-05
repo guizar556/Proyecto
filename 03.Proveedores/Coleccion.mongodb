@@ -1,0 +1,94 @@
+// Usar la base de datos 
+// Autor: Jonathan Guizar Morales
+// Número de control: 22420408
+// Universidad: Tecnológico de Jiquilpan 
+// Proyecto: Cremería
+
+// Conectar y usar la base de datos Cremeria
+use("Cremeria");
+
+// Crear la colección con el esquema y validaciones si no existe
+db.createCollection('provedores', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: ['codigo', 'Nombres', 'Apellidos', 'Direccion', 'FechaInicioRelacion', 'RFC', 'correo_electronico', 'telefono', 'Dt'],
+            properties: {
+                codigo: { 
+                    bsonType: 'int' 
+                },
+                Nombres: { 
+                    bsonType: 'string',
+                    "pattern": "^[a-zA-ZÁÉÍÓÚáéíóúÑñ ]{1,40}$" 
+                },
+                Apellidos: { 
+                    bsonType: 'string', 
+                },
+                Direccion: {
+                    bsonType: 'object',
+                    required: ['Localidad', 'Estado', 'Colonia', 'Avenida', 'CodigoPostal'],
+                    properties: {
+                        Localidad: { 
+                            bsonType: 'string', 
+                            "pattern": "^[a-zA-ZÁÉÍÓÚáéíóúÑñ ]{1,40}$"
+                        },
+                        Estado: { 
+                            bsonType: 'string', 
+                            "pattern": "^[a-zA-ZÁÉÍÓÚáéíóúÑñ ]{1,40}$"
+                        },
+                        Colonia: { 
+                            bsonType: 'string', 
+                            "pattern": "^[a-zA-ZÁÉÍÓÚáéíóúÑñ ]{1,40}$"
+                        },
+                        Avenida: { 
+                            bsonType: 'string', 
+                            "pattern": "^[a-zA-ZÁÉÍÓÚáéíóúÑñ ]{1,40}$"
+                        },
+                        CodigoPostal: { 
+                            bsonType: 'int', 
+                            minimum: 1000, 
+                            maximum: 99999
+                        }
+                    }
+                },
+                FechaInicioRelacion: { 
+                    bsonType: 'string', 
+                    pattern: "^\\d{1,2}\\/\\w+\\/(19\\d{2}|20[0-4]\\d)$" 
+                },
+                RFC: { 
+                    bsonType: 'string', 
+                },
+                correo_electronico: { 
+                    bsonType: 'string', 
+                },
+                foto: { 
+                    bsonType: 'string',
+                },
+                telefono: { 
+                    bsonType: 'string', 
+                },
+                Dt: {
+                    bsonType: 'object',
+                    required: ['codigo', 'precio', 'caracteristicas', 'CodigoProducto'],
+                    properties: {
+                        codigo: { 
+                            bsonType: 'int' 
+                        },
+                        precio: { 
+                            bsonType: 'int', 
+                            minimum: 0 
+                        },
+                        caracteristicas: { 
+                            bsonType: 'string',
+                            pattern: "^(?!\\s).{1,255}(?<!\\s)$" 
+                        },
+                        CodigoProducto: { 
+                            bsonType: 'int' 
+                        }
+                    }
+                }
+            }
+        }
+    }
+});
+

@@ -1,0 +1,442 @@
+//Usar la base de datos 
+//Autor Jonathan Guizar Morales
+//Numero de control 22420408
+//Universdad:Tecnologico de Jiqulpan 
+//Poryecto cremeria
+use("Cremeria");
+
+try {
+db.pedidos.insertMany(
+    [
+        {
+            "codigo": 10,
+            "fecha_pedido": "30/octubre/2023",
+            "Detalles": {
+                "codigoD": 1,
+                "cantidad": 5,
+                "precioUnitario": 120,
+                "codigoProducto": 3
+            },
+            "Empleados": {
+                "CodigoEmpleado": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "Clientes": {
+                "CodigoCliente": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "descripccion_Pedido": "Pedido de 80 cajas de crema agria"
+        },
+        {
+            "codigo": 4,
+            "fecha_pedido": "5/abril/2023",
+            "Detalles": {
+                "codigoD": 2,
+                "cantidad": 2,
+                "precioUnitario": 50,
+                "codigoProducto": 1
+            },
+            "Empleados": {
+                "CodigoEmpleado": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "Clientes": {
+                "CodigoCliente": 4,
+                "Nombres": "Ana Sofía",
+                "Apellidos": "Hernández Sánchez"
+            },
+            "descripccion_Pedido": "Pedido de 20 quesos artesanales"
+        },
+        {
+            "codigo": 8,
+            "fecha_pedido": "12/agosto/2023",
+            "Detalles": {
+                "codigoD": 3,
+                "cantidad": 10,
+                "precioUnitario": 20,
+                "codigoProducto": 5
+            },
+            "Empleados": {
+                "CodigoEmpleado": 3,
+                "Nombres": "Pedro Antonio",
+                "Apellidos": "Hernández Sánchez"
+            },
+            "Clientes": {
+                "CodigoCliente": 3,
+                "Nombres": "Pedro Antonio",
+                "Apellidos": "Martínez Díaz"
+            },
+            "descripccion_Pedido": "Compra de 200 yogures saborizados"
+        },
+        {
+            "codigo": 15,
+            "fecha_pedido": "19/marzo/2024",
+            "Detalles": {
+                "codigoD": 4,
+                "cantidad": 7,
+                "precioUnitario": 75,
+                "codigoProducto": 2
+            },
+            "Empleados": {
+                "CodigoEmpleado": 4,
+                "Nombres": "Sofía Elena",
+                "Apellidos": "Gómez Rodríguez"
+            },
+            "Clientes": {
+                "CodigoCliente": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "descripccion_Pedido": "Compra de 90 yogures bajos en grasa"
+        },
+        {
+            "codigo": 6,
+            "fecha_pedido": "17/junio/2023",
+            "Detalles": {
+                "codigoD": 5,
+                "cantidad": 1,
+                "precioUnitario": 500,
+                "codigoProducto": 4
+            },
+            "Empleados": {
+                "CodigoEmpleado": 1,
+                "Nombres": "Juan Carlos",
+                "Apellidos": "Martínez Pérez"
+            },
+            "Clientes": {
+                "CodigoCliente": 1,
+                "Nombres": "Juan Carlos",
+                "Apellidos": "Gómez Pérez"
+            },
+            "descripccion_Pedido": "Pedido de 10 litros de leche descremada"
+        },
+        {
+            "codigo": 2,
+            "fecha_pedido": "20/febrero/2023",
+            "Detalles": {
+                "codigoD": 6,
+                "cantidad": 12,
+                "precioUnitario": 30,
+                "codigoProducto": 3
+            },
+            "Empleados": {
+                "CodigoEmpleado": 3,
+                "Nombres": "Pedro Antonio",
+                "Apellidos": "Hernández Sánchez"
+            },
+            "Clientes": {
+                "CodigoCliente": 2,
+                "Nombres": "María Luisa",
+                "Apellidos": "López Ramírez"
+            },
+            "descripccion_Pedido": "Pedido de 30 yogures naturales"
+        },
+        {
+            "codigo": 14,
+            "fecha_pedido": "14/febrero/2024",
+            "Detalles": {
+                "codigoD": 7,
+                "cantidad": 6,
+                "precioUnitario": 60,
+                "codigoProducto": 5
+            },
+            "Empleados": {
+                "CodigoEmpleado": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "Clientes": {
+                "CodigoCliente": 4,
+                "Nombres": "Ana Sofía",
+                "Apellidos": "Hernández Sánchez"
+            },
+            "descripccion_Pedido": "Pedido de 20 quesos maduros"
+        },
+        {
+            "codigo": 7,
+            "fecha_pedido": "9/julio/2023",
+            "Detalles": {
+                "codigoD": 8,
+                "cantidad": 4,
+                "precioUnitario": 45,
+                "codigoProducto": 1
+            },
+            "Empleados": {
+                "CodigoEmpleado": 2,
+                "Nombres": "Ana María",
+                "Apellidos": "López González"
+            },
+            "Clientes": {
+                "CodigoCliente": 2,
+                "Nombres": "María Luisa",
+                "Apellidos": "López Ramírez"
+            },
+            "descripccion_Pedido": "Pedido de 25 quesos frescos"
+        },
+        {
+            "codigo": 9,
+            "fecha_pedido": "28/septiembre/2023",
+            "Detalles": {
+                "codigoD": 9,
+                "cantidad": 8,
+                "precioUnitario": 80,
+                "codigoProducto": 2
+            },
+            "Empleados": {
+                "CodigoEmpleado": 4,
+                "Nombres": "Sofía Elena",
+                "Apellidos": "Gómez Rodríguez"
+            },
+            "Clientes": {
+                "CodigoCliente": 4,
+                "Nombres": "Ana Sofía",
+                "Apellidos": "Hernández Sánchez"
+            },
+            "descripccion_Pedido": "Pedido de 50 litros de leche entera"
+        },
+        {
+            "codigo": 11,
+            "fecha_pedido": "3/noviembre/2023",
+            "Detalles": {
+                "codigoD": 10,
+                "cantidad": 3,
+                "precioUnitario": 15,
+                "codigoProducto": 4
+            },
+            "Empleados": {
+                "CodigoEmpleado": 2,
+                "Nombres": "Ana María",
+                "Apellidos": "López González"
+            },
+            "Clientes": {
+                "CodigoCliente": 1,
+                "Nombres": "Juan Carlos",
+                "Apellidos": "Gómez Pérez"
+            },
+            "descripccion_Pedido": "Pedido de 40 litros de leche de cabra"
+        },
+        {
+            "codigo": 5,
+            "fecha_pedido": "25/mayo/2023",
+            "Detalles": {
+                "codigoD": 11,
+                "cantidad": 9,
+                "precioUnitario": 25,
+                "codigoProducto": 3
+            },
+            "Empleados": {
+                "CodigoEmpleado": 4,
+                "Nombres": "Sofía Elena",
+                "Apellidos": "Gómez Rodríguez"
+            },
+            "Clientes": {
+                "CodigoCliente": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "descripccion_Pedido": "Compra de 50 cajas de crema"
+        },
+        {
+            "codigo": 12,
+            "fecha_pedido": "22/diciembre/2023",
+            "Detalles": {
+                "codigoD": 12,
+                "cantidad": 11,
+                "precioUnitario": 35,
+                "codigoProducto": 1
+            },
+            "Empleados": {
+                "CodigoEmpleado": 3,
+                "Nombres": "Pedro Antonio",
+                "Apellidos": "Hernández Sánchez"
+            },
+            "Clientes": {
+                "CodigoCliente": 2,
+                "Nombres": "María Luisa",
+                "Apellidos": "López Ramírez"
+            },
+            "descripccion_Pedido": "Compra de 150 yogures de frutas"
+        },
+        {
+            "codigo": 13,
+            "fecha_pedido": "7/enero/2024",
+            "Detalles": {
+                "codigoD": 13,
+                "cantidad": 14,
+                "precioUnitario": 95,
+                "codigoProducto": 5
+            },
+            "Empleados": {
+                "CodigoEmpleado": 1,
+                "Nombres": "Juan Carlos",
+                "Apellidos": "Martínez Pérez"
+            },
+            "Clientes": {
+                "CodigoCliente": 3,
+                "Nombres": "Pedro Antonio",
+                "Apellidos": "Martínez Díaz"
+            },
+            "descripccion_Pedido": "Pedido de 60 litros de leche sin lactosa"
+        },
+        {
+            "codigo": 3,
+            "fecha_pedido": "10/marzo/2023",
+            "Detalles": {
+                "codigoD": 14,
+                "cantidad": 2,
+                "precioUnitario": 18,
+                "codigoProducto": 2
+            },
+            "Empleados": {
+                "CodigoEmpleado": 1,
+                "Nombres": "Juan Carlos",
+                "Apellidos": "Martínez Pérez"
+            },
+            "Clientes": {
+                "CodigoCliente": 3,
+                "Nombres": "Pedro Antonio",
+                "Apellidos": "Martínez Díaz"
+            },
+            "descripccion_Pedido": "Compra de 100 litros de leche"
+        },
+        {
+            "codigo": 1,
+            "fecha_pedido": "15/enero/2023",
+            "Detalles": {
+                "codigoD": 15,
+                "cantidad": 7,
+                "precioUnitario": 150,
+                "codigoProducto": 4
+            },
+            "Empleados": {
+                "CodigoEmpleado": 2,
+                "Nombres": "Ana María",
+                "Apellidos": "López González"
+            },
+            "Clientes": {
+                "CodigoCliente": 1,
+                "Nombres": "Juan Carlos",
+                "Apellidos": "Gómez Pérez"
+            },
+            "descripccion_Pedido": "Compra de 50 productos lácteos"
+        },
+        {
+            "codigo": 6,
+            "fecha_pedido": "17/junio/2023",
+            "Detalles": {
+                "codigoD": 16,
+                "cantidad": 6,
+                "precioUnitario": 55,
+                "codigoProducto": 3
+            },
+            "Empleados": {
+                "CodigoEmpleado": 1,
+                "Nombres": "Juan Carlos",
+                "Apellidos": "Martínez Pérez"
+            },
+            "Clientes": {
+                "CodigoCliente": 1,
+                "Nombres": "Juan Carlos",
+                "Apellidos": "Gómez Pérez"
+            },
+            "descripccion_Pedido": "Pedido de 10 litros de leche descremada"
+        },
+        {
+            "codigo": 14,
+            "fecha_pedido": "14/febrero/2024",
+            "Detalles": {
+                "codigoD": 17,
+                "cantidad": 4,
+                "precioUnitario": 45,
+                "codigoProducto": 1
+            },
+            "Empleados": {
+                "CodigoEmpleado": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "Clientes": {
+                "CodigoCliente": 4,
+                "Nombres": "Ana Sofía",
+                "Apellidos": "Hernández Sánchez"
+            },
+            "descripccion_Pedido": "Pedido de 20 quesos maduros"
+        },
+        {
+            "codigo": 10,
+            "fecha_pedido": "30/octubre/2023",
+            "Detalles": {
+                "codigoD": 18,
+                "cantidad": 13,
+                "precioUnitario": 99,
+                "codigoProducto": 2
+            },
+            "Empleados": {
+                "CodigoEmpleado": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "Clientes": {
+                "CodigoCliente": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "descripccion_Pedido": "Pedido de 80 cajas de crema agria"
+        },
+        {
+            "codigo": 4,
+            "fecha_pedido": "5/abril/2023",
+            "Detalles": {
+                "codigoD": 19,
+                "cantidad": 9,
+                "precioUnitario": 120,
+                "codigoProducto": 5
+            },
+            "Empleados": {
+                "CodigoEmpleado": 5,
+                "Nombres": "Luis Fernando",
+                "Apellidos": "Castro Ortiz"
+            },
+            "Clientes": {
+                "CodigoCliente": 4,
+                "Nombres": "Ana Sofía",
+                "Apellidos": "Hernández Sánchez"
+            },
+            "descripccion_Pedido": "Pedido de 20 quesos artesanales"
+        },
+        {
+            "codigo": 8,
+            "fecha_pedido": "12/agosto/2023",
+            "Detalles": {
+                "codigoD": 20,
+                "cantidad": 15,
+                "precioUnitario": 200,
+                "codigoProducto": 4
+            },
+            "Empleados": {
+                "CodigoEmpleado": 3,
+                "Nombres": "Pedro Antonio",
+                "Apellidos": "Hernández Sánchez"
+            },
+            "Clientes": {
+                "CodigoCliente": 3,
+                "Nombres": "Pedro Antonio",
+                "Apellidos": "Martínez Díaz"
+            },
+            "descripccion_Pedido": "Compra de 200 yogures saborizados"
+        },
+
+    ]
+);
+} catch (e) {
+    print("An error occurred: " + e.message);
+    if (e.writeErrors) {
+        e.writeErrors.forEach(function (error) {
+            print("Error in document: " + JSON.stringify(error.op));
+            print("Error message: " + error.errmsg);
+        });
+    }
+}
