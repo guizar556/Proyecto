@@ -12,65 +12,240 @@ db.transportes.insertMany(
             "NumeroDePlaca": "ABC-123",
             "Marca": "Chevrolet",
             "Modelo": "Sonic",
-            "DescripccionDelVehiculo": "Vehículo compacto ideal para ciudad.",
             "Provedores": {
                 "Nombres": "Juan Pablo",
                 "Apellidos": "González Hernández",
                 "codigo": 1
             },
-             "Foto": "https://example.com/images/nissan-versa.jpg"
+            "Foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fqueserialaantigua.com%2Fel-transporte-de-leche-en-camiones-cisterna%2F&psig=AOvVaw3F_OwkqLP586tcWSNY2_KV&ust=1727909882948000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJjnj4mk7ogDFQAAAAAdAAAAABAE"
         },
         {
             "codigo": 2,
             "NumeroDePlaca": "DEF-456",
             "Marca": "Nissan",
             "Modelo": "Versa",
-            "DescripccionDelVehiculo": "Sedán eficiente y cómodo para viajes largos.",
             "Provedores": {
                 "Nombres": "María José",
                 "Apellidos": "López Pérez",
                 "codigo": 2
             },
-             "Foto": "https://example.com/images/nissan-versa.jpg"
+            "Foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Fvector-premium%2Fcamion-lleno-productos-lacteos_24663565.htm&psig=AOvVaw3F_OwkqLP586tcWSNY2_KV&ust=1727909882948000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJjnj4mk7ogDFQAAAAAdAAAAABAJ"
         },
         {
             "codigo": 3,
             "NumeroDePlaca": "GHI-789",
             "Marca": "Ford",
             "Modelo": "Fiesta",
-            "DescripccionDelVehiculo": "Vehículo ágil y económico para el uso diario.",
             "Provedores": {
                 "Nombres": "Carlos ",
                 "Apellidos": "Ramírez Soto",
                 "codigo": 3
             },
-             "Foto": "https://example.com/images/nissan-versa.jpg"
+            "Foto": "https:\/\/www.google.com\/imgres?q=transportes%20de%20lacteos&imgurl=https%3A%2F%2Finfo-transportes.com.mx%2Fimages%2FLALATransportex8.webp&imgrefurl=https%3A%2F%2Finfo-transportes.com.mx%2Findex.php%2Fhome-page%2Fseccion-3%2Fsubseccion-3-4%2F1525-pese-a-entorno-inflacionario-en-lacteos-avanza-grupo-lala&docid=hG2wPZcIQ8_hlM&tbnid=wv15Q36natuuwM&vet=12ahUKEwiEkMaGpO6IAxVJLTQIHVGFDLgQM3oECBcQAA..i&w=800&h=600&hcb=2&ved=2ahUKEwiEkMaGpO6IAxVJLTQIHVGFDLgQM3oECBcQAA"
         },
         {
             "codigo": 4,
             "NumeroDePlaca": "JKL-012",
             "Marca": "Volkswagen",
             "Modelo": "Jetta",
-            "DescripccionDelVehiculo": "Sedán de alta eficiencia y confort.",
             "Provedores": {
                 "Nombres": "Sofía Elizabeth",
                 "Apellidos": "Martínez García",
                 "codigo": 4
             },
-             "Foto": "https://example.com/images/nissan-versa.jpg"
+            "Foto": "https:\/\/www.google.com\/imgres?q=transportes%20de%20lacteos%20imagenes%20de%20presentacion&imgurl=https%3A%2F%2Fenalimentos.lat%2Fimages%2Fnoticias%2F2023-11%2Fgrupo-lala-implementa.jpg&imgrefurl=https%3A%2F%2Fenalimentos.lat%2Fnoticias%2F8278-grupo-lala-implementa-tecnologia-avanzada-y-es-reconocida-por-su-transporte-limpio.html&docid=Qn7a05O9BIUOlM&tbnid=hBWVQYF9BYWUrM&vet=12ahUKEwjbpdGnpO6IAxWwLTQIHffXDXcQM3oECDQQAA..i&w=920&h=700&hcb=2&ved=2ahUKEwjbpdGnpO6IAxWwLTQIHffXDXcQM3oECDQQAA"
         },
         {
             "codigo": 5,
             "NumeroDePlaca": "MNO-345",
             "Marca": "Toyota",
             "Modelo": "Corolla",
-            "DescripccionDelVehiculo": "Confiable y duradero, ideal para familias.",
             "Provedores": {
                 "Nombres": "Luis Antonio",
                 "Apellidos": "Fernández Díaz",
                 "codigo": 5
             },
-             "Foto": "https://example.com/images/nissan-versa.jpg"
+            "Foto": "https:\/\/www.google.com\/imgres?q=transportes%20de%20lacteos%20imagenes%20de%20presentacion&imgurl=https%3A%2F%2Fwww.il-latam.com%2Fwp-content%2Fuploads%2F2018%2F09%2F140_De_la_granja.jpg&imgrefurl=https%3A%2F%2Fwww.il-latam.com%2Fblog%2Farticulos-centrales%2Fde-la-granja-al-refrigeradorr%2F&docid=TpDjSQZEmTczqM&tbnid=qzQ7taiU3zPmJM&vet=12ahUKEwjbpdGnpO6IAxWwLTQIHffXDXcQM3oECGYQAA..i&w=567&h=395&hcb=2&ved=2ahUKEwjbpdGnpO6IAxWwLTQIHffXDXcQM3oECGYQAA"
+        },
+        {
+            "codigo": 6,
+            "NumeroDePlaca": "PQR-678",
+            "Marca": "Hyundai",
+            "Modelo": "Elantra",
+            "Provedores": {
+                "Nombres": "Juan Pablo",
+                "Apellidos": "González Hernández",
+                "codigo": 1
+            },
+            "Foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Flalechera12.wordpress.com%2Ftransporte-de-los-productos-lacteos%2F&psig=AOvVaw3PkSfpROciaVHKhZzzbIeG&ust=1727909952111000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCF0smk7ogDFQAAAAAdAAAAABAE"
+        },
+        {
+            "codigo": 7,
+            "NumeroDePlaca": "STU-901",
+            "Marca": "Kia",
+            "Modelo": "Rio",
+            "Provedores": {
+                "Nombres": "María José",
+                "Apellidos": "López Pérez",
+                "codigo": 2
+            },
+            "Foto": "https:\/\/www.google.com\/imgres?q=transportes%20de%20lacteos%20imagenes%20de%20presentacion&imgurl=https%3A%2F%2Fdiariopresenterm.blob.core.windows.net.optimalcdn.com%2Fimages%2F2019%2F11%2F19%2Fesol3carlala2.jpg&imgrefurl=https%3A%2F%2Fwww.diariopresente.mx%2Felsoldelsureste%2Fle-querian-beber-la-leche-al-camion-lechero%2F245720&docid=QwDt7EpVmEZ9_M&tbnid=1ZWH57n-O_vRdM&vet=12ahUKEwjbpdGnpO6IAxWwLTQIHffXDXcQM3oECD0QAA..i&w=564&h=752&hcb=2&ved=2ahUKEwjbpdGnpO6IAxWwLTQIHffXDXcQM3oECD0QAA"
+        },
+        {
+            "codigo": 8,
+            "NumeroDePlaca": "VWX-234",
+            "Marca": "Mazda",
+            "Modelo": "3",
+            "Provedores": {
+                "Nombres": "Carlos ",
+                "Apellidos": "Ramírez Soto",
+                "codigo": 3
+            },
+            "Foto": "https:\/\/www.google.com\/imgres?q=transportes%20de%20lacteos%20imagenes%20de%20presentacion&imgurl=https%3A%2F%2Fwww.legiscomex.com%2Fpresentaciones%2FModuloLogistico%2Fimages%2Fguia-de-logistica-y-transporte.jpg&imgrefurl=https%3A%2F%2Fwww.legiscomex.com%2Finformacion-modulo-logistico%2Fguia-de-logistica-y-transporte&docid=-ke2GRRA9HOtbM&tbnid=lpLDOs-884RokM&vet=12ahUKEwi4mvHjpO6IAxXwPTQIHfOSIfs4ChAzegQIbxAA..i&w=1200&h=424&hcb=2&ved=2ahUKEwi4mvHjpO6IAxXwPTQIHfOSIfs4ChAzegQIbxAA"
+        },
+        {
+            "codigo": 9,
+            "NumeroDePlaca": "YZA-567",
+            "Marca": "Subaru",
+            "Modelo": "Impreza",
+            "Provedores": {
+                "Nombres": "Sofía Elizabeth",
+                "Apellidos": "Martínez García",
+                "codigo": 4
+            },
+            "Foto": "https:\/\/www.google.com\/imgres?q=camionetas%20de%20entrega%20jonda&imgurl=https%3A%2F%2Fwww.honda.mx%2Fweb%2Fimg%2Fcars%2Fmodels%2Fbrv%2F2024%2Fgalleries%2Fgallery_1%2F1.jpg&imgrefurl=https%3A%2F%2Fwww.honda.mx%2Fautos%2Fbr-v&docid=Mz0_pt3yr5F_-M&tbnid=Cs0zBFRq2Ge0xM&vet=12ahUKEwjdvaTxpO6IAxWaGDQIHVcmJeoQM3oECBwQAA..i&w=1428&h=715&hcb=2&ved=2ahUKEwjdvaTxpO6IAxWaGDQIHVcmJeoQM3oECBwQAA"
+        },
+        {
+            "codigo": 10,
+            "NumeroDePlaca": "BCD-890",
+            "Marca": "Honda",
+            "Modelo": "Civic",
+            "Provedores": {
+                "Nombres": "Luis Antonio",
+                "Apellidos": "Fernández Díaz",
+                "codigo": 5
+            },
+            "Foto": "https:\/\/www.google.com\/imgres?q=transportes%20de%20lacteos%20imagenes%20de%20presentacion&imgurl=https%3A%2F%2Fanugafoodtec.krones.com%2Fmedia%2Fimages%2F1280_01_201911KO04_0113_Preview_Layout.jpg&imgrefurl=https%3A%2F%2Fanugafoodtec.krones.com%2Fes%2Fempresa%2Fprensa%2Fmagazine%2Freferencia%2Fnueva-fabrica-de-lacteos-para-tine.php&docid=r1-GIEogWek7tM&tbnid=W244dCt7Og9zbM&vet=12ahUKEwi4mvHjpO6IAxXwPTQIHfOSIfs4ChAzegQIKxAA..i&w=1280&h=853&hcb=2&ved=2ahUKEwi4mvHjpO6IAxXwPTQIHfOSIfs4ChAzegQIKxAA"
+        },
+        {
+            "codigo": 11,
+            "NumeroDePlaca": "EFG-123",
+            "Marca": "Chevrolet",
+            "Modelo": "Malibu",
+            "Provedores": {
+                "Nombres": "Juan Pablo",
+                "Apellidos": "González Hernández",
+                "codigo": 1
+            },
+            "Foto": "https:\/\/www.google.com\/imgres?q=transportes%20de%20lacteos%20imagenes%20de%20presentacion&imgurl=https%3A%2F%2Fwww.elsoldepuebla.com.mx%2Flocal%2Festado%2F8t6huf-trailer-recuperado-tepeaca.jpg%2FALTERNATES%2FLANDSCAPE_400%2FTr%25C3%25A1iler%2520recuperado%2520Tepeaca.jpg&imgrefurl=https%3A%2F%2Fwww.elsoldepuebla.com.mx%2Flocal%2Festado%2Frecuperan-trailer-cargado-de-leche-tras-operativo-en-tepeaca-puebla-kedworth-trasportes-easo-lala-autopista-puebla-orizab-6386009.html&docid=BoUtCpAPeE3CzM&tbnid=yUuGR0ka07vUrM&vet=12ahUKEwi4mvHjpO6IAxXwPTQIHfOSIfs4ChAzegQIbBAA..i&w=400&h=250&hcb=2&ved=2ahUKEwi4mvHjpO6IAxXwPTQIHfOSIfs4ChAzegQIbBAA"
+        },
+        {
+            "codigo": 12,
+            "NumeroDePlaca": "HIJ-456",
+            "Marca": "Nissan",
+            "Modelo": "Altima",
+            "Provedores": {
+                "Nombres": "María José",
+                "Apellidos": "López Pérez",
+                "codigo": 2
+            },
+            "Foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fwww.lanacion.com.py%2Fnegocios%2F2021%2F08%2F11%2Fenlentecimiento-en-distribucion-de-productos-genera-sobrecostos-refiere-capainlac%2F&psig=AOvVaw3PkSfpROciaVHKhZzzbIeG&ust=1727909952111000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCF0smk7ogDFQAAAAAdAAAAABAK"
+        },
+        {
+            "codigo": 13,
+            "NumeroDePlaca": "KLM-789",
+            "Marca": "Ford",
+            "Modelo": "Fusion",
+            "Provedores": {
+                "Nombres": "Carlos ",
+                "Apellidos": "Ramírez Soto",
+                "codigo": 3
+            },
+            "Foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fagronotas.wordpress.com%2F2008%2F06%2F02%2Ftransporte-no-refrigerado-deteriora-leche-pasteurizada%2F&psig=AOvVaw3PkSfpROciaVHKhZzzbIeG&ust=1727909952111000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCF0smk7ogDFQAAAAAdAAAAABAV"
+        },
+        {
+            "codigo": 14,
+            "NumeroDePlaca": "NOP-012",
+            "Marca": "Volkswagen",
+            "Modelo": "Tiguan",
+            "Provedores": {
+                "Nombres": "Sofía Elizabeth",
+                "Apellidos": "Martínez García",
+                "codigo": 4
+            },
+            "Foto": "https:\/\/www.google.com\/imgres?imgurl=https%3A%2F%2Fportalechero.com%2Fwp-content%2Fuploads%2F2023%2F01%2FquesosFabrica-Rocalac-camion-trabajadores-quesos.jpg&tbnid=vaPx7b5nETDiGM&vet=10CAQQxiAoA2oXChMI8IXSyaTuiAMVAAAAAB0AAAAAEB0..i&imgrefurl=https%3A%2F%2Fportalechero.com%2Fargentina-los-precios-de-quesos-en-fabrica-aumentaron-un-10-en-lo-que-va-de-enero%2F&docid=DIHBu3XbouEbAM&w=1020&h=580&itg=1&q=transportes%20de%20lacteos%20imagenes%20de%20presentacion&client=opera-gx&ved=0CAQQxiAoA2oXChMI8IXSyaTuiAMVAAAAAB0AAAAAEB0"
+        },
+        {
+            "codigo": 15,
+            "NumeroDePlaca": "QRS-345",
+            "Marca": "Toyota",
+            "Modelo": "RAV4",
+            "Provedores": {
+                "Nombres": "Luis Antonio",
+                "Apellidos": "Fernández Díaz",
+                "codigo": 5
+            },
+            "Foto": "https:\/\/www.google.com\/imgres?imgurl=https%3A%2F%2Fwww.joviar.mx%2Fwp-content%2Fuploads%2F2020%2F12%2Fjoviar-treansportes-2-min.jpg&tbnid=-JgWGdWUg6G5tM&vet=10CAoQxiAoCWoXChMI8IXSyaTuiAMVAAAAAB0AAAAAEB0..i&imgrefurl=https%3A%2F%2Fwww.joviar.mx%2Fcriterios-de-la-fao-para-el-manejo-y-transporte-de-leche-y-productos-lacteos%2F&docid=cjgPJyPeYY8-TM&w=1459&h=1294&itg=1&q=transportes%20de%20lacteos%20imagenes%20de%20presentacion&client=opera-gx&ved=0CAoQxiAoCWoXChMI8IXSyaTuiAMVAAAAAB0AAAAAEB0"
+        },
+        {
+            "codigo": 16,
+            "NumeroDePlaca": "TUV-678",
+            "Marca": "Hyundai",
+            "Modelo": "Tucson",
+            "Provedores": {
+                "Nombres": "Juan Pablo",
+                "Apellidos": "González Hernández",
+                "codigo": 1
+            },
+            "Foto": "https:\/\/www.google.com\/imgres?imgurl=https%3A%2F%2Fcdn.forbes.com.mx%2F2015%2F05%2FBimbo1-e1650975567491.jpg&tbnid=igF5VChXJ_v9-M&vet=10CBQQxiAoBmoXChMI8IXSyaTuiAMVAAAAAB0AAAAAEB0..i&imgrefurl=https%3A%2F%2Fwww.forbes.com.mx%2Fnegocios-industria-corregir-imprecisiones-productos-lacteos-vetados%2F&docid=MO7Ju61jKVJ8ZM&w=1280&h=720&itg=1&q=transportes%20de%20lacteos%20imagenes%20de%20presentacion&client=opera-gx&ved=0CBQQxiAoBmoXChMI8IXSyaTuiAMVAAAAAB0AAAAAEB0"
+        },
+        {
+            "codigo": 17,
+            "NumeroDePlaca": "WXY-901",
+            "Marca": "Kia",
+            "Modelo": "Sportage",
+            "Provedores": {
+                "Nombres": "María José",
+                "Apellidos": "López Pérez",
+                "codigo": 2
+            },
+            "Foto": "https:\/\/www.google.com\/imgres?imgurl=https%3A%2F%2Fmundolacteo.es%2Fwp-content%2Fuploads%2F2021%2F12%2Fcamiones-circulando-carretera.jpg&tbnid=kewFGtdi0V-TyM&vet=10CBAQxiAoAmoXChMI8IXSyaTuiAMVAAAAAB0AAAAAEB0..i&imgrefurl=https%3A%2F%2Fmundolacteo.es%2Fleche%2Fconservacion-transporte-productos-lacteos&docid=h_SKg7dlzyZ0NM&w=1400&h=600&itg=1&q=transportes%20de%20lacteos%20imagenes%20de%20presentacion&client=opera-gx&ved=0CBAQxiAoAmoXChMI8IXSyaTuiAMVAAAAAB0AAAAAEB0"
+        },
+        {
+            "codigo": 18,
+            "NumeroDePlaca": "ZAB-234",
+            "Marca": "Mazda",
+            "Modelo": "CX-5",
+            "Provedores": {
+                "Nombres": "Carlos ",
+                "Apellidos": "Ramírez Soto",
+                "codigo": 3
+            },
+            "Foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fwww.tyt.com.mx%2Fnota%2Flala-electrifica-su-flota-de-reparto-con-30-camiones-byd&psig=AOvVaw3PkSfpROciaVHKhZzzbIeG&ust=1727909952111000&source=images&cd=vfe&opi=89978449&ved=0CBgQ3YkBahcKEwjwhdLJpO6IAxUAAAAAHQAAAAAQJg"
+        },
+        {
+            "codigo": 19,
+            "NumeroDePlaca": "CDE-567",
+            "Marca": "Subaru",
+            "Modelo": "Forester",
+            "Provedores": {
+                "Nombres": "Sofía Elizabeth",
+                "Apellidos": "Martínez García",
+                "codigo": 4
+            },
+            "Foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Ft21.com.mx%2Fterrestre-2022-12-07-grupo-lala-adquiere-30-vehiculos-100-electricos-refrigerados%2F&psig=AOvVaw3PkSfpROciaVHKhZzzbIeG&ust=1727909952111000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCF0smk7ogDFQAAAAAdAAAAABAs"
+        },
+        {
+            "codigo": 20,
+            "NumeroDePlaca": "FGH-890",
+            "Marca": "Honda",
+            "Modelo": "CR-V",
+            "Provedores": {
+                "Nombres": "Luis Antonio",
+                "Apellidos": "Fernández Díaz",
+                "codigo": 5
+            },
+            "Foto": "https:\/\/www.google.com\/imgres?imgurl=https%3A%2F%2Flatamobility.com%2Fwp-content%2Fuploads%2F2022%2F12%2FLALA-1.jpg&tbnid=LnClumSXoo1M0M&vet=10CA4QxiAoAWoXChMI8IXSyaTuiAMVAAAAAB0AAAAAEDA..i&imgrefurl=https%3A%2F%2Flatamobility.com%2Fmexico-grupo-lala-adquiere-30-unidades-100-electricas-para-operaciones-de-reparto%2F&docid=BysfwaX0_TJBLM&w=1472&h=828&itg=1&q=transportes%20de%20lacteos%20imagenes%20de%20presentacion&client=opera-gx&ved=0CA4QxiAoAWoXChMI8IXSyaTuiAMVAAAAAB0AAAAAEDA"
         }
     ]
 );

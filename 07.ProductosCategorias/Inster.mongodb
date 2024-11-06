@@ -20,11 +20,11 @@ db.productos.insertMany([
         "stock_minimo": 10,
         "stock_maximo": 200,
         "punto_de_reorden": 20,
-        "foto": "https://www.example.com/queso_fresco.jpg",
+        "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fwww.bonviveur.es%2Frecetas%2Fqueso-fresco-casero&psig=AOvVaw2ZzZaOG8Tehs9IApUfQOLo&ust=1727909625102000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCICu-Iyj7ogDFQAAAAAdAAAAABAI",
         "Categoria": {
             "NombreCategoria": "Lácteos",
             "codigo": 1,
-            "foto": "https://www.example.com/lacteos.jpg"
+            "foto": "https:\/\/www.google.com\/imgres?q=lacteos&imgurl=https%3A%2F%2Fthefoodtech.com%2Fwp-content%2Fuploads%2F2021%2F08%2Flacteos-828x548.jpg&imgrefurl=https%3A%2F%2Fthefoodtech.com%2Fnutricion-y-salud%2Fla-importancia-de-los-lacteos-en-la-nutricion-humana%2F&docid=Gq1drcGC6J5vHM&tbnid=5sfT8_mCDX3AyM&vet=12ahUKEwjwyL-Zpu6IAxVHMzQIHTiaGPYQM3oECBwQAA..i&w=828&h=548&hcb=2&ved=2ahUKEwjwyL-Zpu6IAxVHMzQIHTiaGPYQM3oECBwQAA"
         }
     },
     {
@@ -41,11 +41,11 @@ db.productos.insertMany([
         "stock_minimo": 20,
         "stock_maximo": 300,
         "punto_de_reorden": 30,
-        "foto": "https://www.example.com/leche_deslactosada.jpg",
+        "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fwww.abc.es%2Fbienestar%2Falimentacion%2Fabci-leche-202007090823_noticia.html&psig=AOvVaw1DWfAZatoH_M3f6Ql-Fxyt&ust=1727909655883000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiPw5uj7ogDFQAAAAAdAAAAABAI",
         "Categoria": {
             "NombreCategoria": "Bebidas",
             "codigo": 2,
-            "foto": "https://www.example.com/bebidas.jpg"
+            "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fcms.wingstopmexico.com%2Fbebidas&psig=AOvVaw0qLKUwaUugYgPDGzUW11gk&ust=1727910484113000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD3g6em7ogDFQAAAAAdAAAAABAE"
         }
     },
     {
@@ -62,11 +62,11 @@ db.productos.insertMany([
         "stock_minimo": 15,
         "stock_maximo": 250,
         "punto_de_reorden": 25,
-        "foto": "https://www.example.com/yogur_natural.jpg",
+        "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fclickabasto.com%2Fproducts%2Fyogurt-yoplait-natural-1-lt&psig=AOvVaw3G4CYZYvKiIwmgVcuQ9R4M&ust=1727909696457000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCICd666j7ogDFQAAAAAdAAAAABAE",
         "Categoria": {
             "NombreCategoria": "Aperitivos",
             "codigo": 3,
-            "foto": "https://www.example.com/aperitivos.jpg"
+            "foto": "https:\/\/www.google.com\/imgres?q=aperitivos%7B&imgurl=https%3A%2F%2Fi.blogs.es%2F7f7b5d%2Ftartaletas_salmon%2F450_1000.jpg&imgrefurl=https%3A%2F%2Fwww.directoalpaladar.com%2Frecetas-de-aperitivos%2F57-aperitivos-y-canapes-sencillos-y-baratos&docid=fR-W_UU_UiH9_M&tbnid=yq4YW3PZvusexM&vet=12ahUKEwiC3p6xpu6IAxVICTQIHZStI7gQM3oECBwQAA..i&w=450&h=300&hcb=2&ved=2ahUKEwiC3p6xpu6IAxVICTQIHZStI7gQM3oECBwQAA"
         }
     },
     {
@@ -83,11 +83,11 @@ db.productos.insertMany([
         "stock_minimo": 10,
         "stock_maximo": 220,
         "punto_de_reorden": 15,
-        "foto": "https://www.example.com/crema_agria.jpg",
+        "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fwww.directoalpaladar.com%2Frecetario%2Fcomo-hacer-sour-cream-crema-nata-agria-casera-receta-facilisima-lactosa&psig=AOvVaw2uaKObC02dBenGIYXPzDCG&ust=1727909714954000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDi07ej7ogDFQAAAAAdAAAAABAE",
         "Categoria": {
             "NombreCategoria": "Cereales",
             "codigo": 4,
-            "foto": "https://www.example.com/cereales.jpg"
+            "foto": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcQ97O8lHydDQbbAnRp1Q1IaCroVWr73qWGGuA&s"
         }
     },
     {
@@ -104,11 +104,11 @@ db.productos.insertMany([
         "stock_minimo": 8,
         "stock_maximo": 150,
         "punto_de_reorden": 10,
-        "foto": "https://www.example.com/mantequilla.jpg",
+        "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fjordibordas.com%2Fblog%2Fcomo-reemplazar-la-mantequilla-por-ingredientes-de-origen-vegetal%2F&psig=AOvVaw0Fn8azuEQ_oFkLVVjmKetZ&ust=1727909738101000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOim2MKj7ogDFQAAAAAdAAAAABAE",
         "Categoria": {
             "NombreCategoria": "Congelados",
             "codigo": 5,
-            "foto": "https://www.example.com/congelados.jpg"
+            "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fbecogalia.com%2Fcongelados-la-alternativa-rapida-saludable-una-buena-alimentacion-siglo-xxi%2F&psig=AOvVaw3UfUe4clGIdqDiLyL9uAX-&ust=1727910573856000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMDb4dKm7ogDFQAAAAAdAAAAABAE"
         }
     }
 ]);

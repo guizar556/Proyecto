@@ -22,11 +22,11 @@ db.empleados.insertMany(
                 "CodigoPostal": 12345
             },
             "Telefono": "5551234567",
-            "FechaNacimiento": "12/enero/1992",
-            "recomendaciones": "Excelente en trabajo en equipo",
-            "FechaContratacion": "5/febrero/2020",
+            "FechaNacimiento": "12\/enero\/1992",
+            "FechaContratacion": "5\/febrero\/2020",
             "Genero": "Masculino",
-            "foto": "https://www.ejemplo.com/foto1.jpg"
+            "recomendaciones": "Excelente en trabajo en equipo",
+            "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fes%2Ffotos%2Fpersona-de-frente&psig=AOvVaw3kzP3YnfjVXknQ3cPanzM7&ust=1727909507983000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOiXrdWi7ogDFQAAAAAdAAAAABAE"
         },
         {
             "codigo": 2,
@@ -43,11 +43,11 @@ db.empleados.insertMany(
                 "CodigoPostal": 67890
             },
             "Telefono": "5557654321",
-            "FechaNacimiento": "25/marzo/1996",
-            "recomendaciones": "Altamente recomendada por su anterior empleador",
-            "FechaContratacion": "10/marzo/2019",
+            "FechaNacimiento": "25\/marzo\/1996",
+            "FechaContratacion": "10\/marzo\/2019",
             "Genero": "Femenino",
-            "foto": "https://www.ejemplo.com/foto2.jpg"
+            "recomendaciones": "Altamente recomendada por su anterior empleador",
+            "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fes%2Ffotos%2Fpersona-de-frente&psig=AOvVaw3kzP3YnfjVXknQ3cPanzM7&ust=1727909507983000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOiXrdWi7ogDFQAAAAAdAAAAABAY"
         },
         {
             "codigo": 3,
@@ -64,11 +64,11 @@ db.empleados.insertMany(
                 "CodigoPostal": 54321
             },
             "Telefono": "5559876543",
-            "FechaNacimiento": "30/abril/1984",
-            "recomendaciones": "Trabajador dedicado y eficiente",
-            "FechaContratacion": "15/junio/2018",
+            "FechaNacimiento": "30\/abril\/1984",
+            "FechaContratacion": "15\/junio\/2018",
             "Genero": "Masculino",
-            "foto": "https://www.ejemplo.com/foto3.jpg"
+            "recomendaciones": "Trabajador dedicado y eficiente",
+            "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Fpersona-frente&psig=AOvVaw2jvWTM02E7BrdjGHOI7TSY&ust=1727909548036000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCVzemi7ogDFQAAAAAdAAAAABAE"
         },
         {
             "codigo": 4,
@@ -85,11 +85,32 @@ db.empleados.insertMany(
                 "CodigoPostal": 98765
             },
             "Telefono": "5552345678",
-            "FechaNacimiento": "10/mayo/1989",
-            "recomendaciones": "Liderazgo excelente en proyectos",
-            "FechaContratacion": "1/julio/2021",
+            "FechaNacimiento": "10\/mayo\/1989",
+            "FechaContratacion": "1\/julio\/2021",
             "Genero": "Femenino",
-            "foto": "https://www.ejemplo.com/foto4.jpg"
+            "recomendaciones": "Liderazgo excelente en proyectos",
+            "foto": "https:\/\/www.google.com\/imgres?q=imagenes%20de%20personas%20de%20frente&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1171169099%2Fes%2Ffoto%2Fhombre-con-brazos-cruzados-aislados-sobre-fondo-gris.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3D8qDLKdLMm2i8DHXY6crX6a5omVh2IxqrOxJV2QGzgFg%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fes%2Ffotos%2Fhombre-de-frente&docid=2UVXt9iC7kW5NM&tbnid=m-0hmZYfKS8ERM&vet=12ahUKEwjVzezmou6IAxVmle4BHZ3FKsEQM3oECCoQAA..i&w=612&h=408&hcb=2&ved=2ahUKEwjVzezmou6IAxVmle4BHZ3FKsEQM3oECCoQAA"
+        },
+        {
+            "codigo": 5,
+            "correo": "luis.castro@gmail.com",
+            "Nombres": "Luis Fernando",
+            "Apellidos": "Castro Ortiz",
+            "Edad": 45,
+            "Address": {
+                "Localidad": "Pátzcuaro",
+                "Estado": "Michoacán",
+                "Colonia": "La Estancia",
+                "Avenida": "Calle Benito Juárez",
+                "NumeroVivienda": 654,
+                "CodigoPostal": 65432
+            },
+            "Telefono": "5553456789",
+            "FechaNacimiento": "18\/julio\/1979",
+            "FechaContratacion": "20\/agosto\/2015",
+            "Genero": "Masculino",
+            "recomendaciones": "Puntual y confiable",
+            "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fwww.crushpixel.com%2Fes%2Fstock-photo%2Fsmiling-young-woman-front-group-676121.html&psig=AOvVaw2jvWTM02E7BrdjGHOI7TSY&ust=1727909548036000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCVzemi7ogDFQAAAAAdAAAAABAP"
         }
     ]
 );

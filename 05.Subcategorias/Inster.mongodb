@@ -13,11 +13,11 @@ db.subcategorias.insertMany(
             "DescripcionDeSubcategoria": "Productos lácteos fermentados, ideales para el desayuno.",
             "tipoDeRotacion": "Rápida",
             "marca_de_la_subcategoria": "La Lechera",
-            "foto": "https://www.example.com/yogurt.jpg",
+            "foto": "https:\/\/www.google.com\/imgres?q=yogures&imgurl=https%3A%2F%2Fwww.webconsultas.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fwch_image_schema%2Fpublic%2Ftemas%2Fyogures.jpg&imgrefurl=https%3A%2F%2Fwww.webconsultas.com%2Fdieta-y-nutricion%2Falimentos-saludables%2Fque-es-el-yogur&docid=rtu6WT4XdNtfTM&tbnid=1_ZUB2qrvr1W5M&vet=12ahUKEwi3-JnZpu6IAxWFOjQIHbCLCcgQM3oECHEQAA..i&w=1200&h=675&hcb=2&ved=2ahUKEwi3-JnZpu6IAxWFOjQIHbCLCcgQM3oECHEQAA",
             "Categorias": {
                 "NombreCategoria": "Lácteos",
                 "codigo": 1,
-                "foto": "https://www.example.com/lacteos.jpg"
+                "foto": "https:\/\/www.google.com\/imgres?q=lacteos&imgurl=https%3A%2F%2Fthefoodtech.com%2Fwp-content%2Fuploads%2F2021%2F08%2Flacteos-828x548.jpg&imgrefurl=https%3A%2F%2Fthefoodtech.com%2Fnutricion-y-salud%2Fla-importancia-de-los-lacteos-en-la-nutricion-humana%2F&docid=Gq1drcGC6J5vHM&tbnid=5sfT8_mCDX3AyM&vet=12ahUKEwjwyL-Zpu6IAxVHMzQIHTiaGPYQM3oECBwQAA..i&w=828&h=548&hcb=2&ved=2ahUKEwjwyL-Zpu6IAxVHMzQIHTiaGPYQM3oECBwQAA"
             }
         },
         {
@@ -26,11 +26,11 @@ db.subcategorias.insertMany(
             "DescripcionDeSubcategoria": "Bebidas carbonatadas de diferentes sabores.",
             "tipoDeRotacion": "Rápida",
             "marca_de_la_subcategoria": "Coca-Cola",
-            "foto": "https://www.example.com/refrescos.jpg",
+            "foto": "https:\/\/www.google.com\/imgres?q=refrescos&imgurl=http%3A%2F%2Fblog.feebbomexico.com%2Fwp-content%2Fuploads%2F2013%2F11%2FRefrescosssss.jpg&imgrefurl=http%3A%2F%2Fblog.feebbomexico.com%2Festudio-de-mercado-sobre-consumo-de-refresco-en-mexico%2F&docid=JlyH3myqdpO6uM&tbnid=jeMJuVSbgypS6M&vet=12ahUKEwijmO_hpu6IAxX8MzQIHYm_FgcQM3oECBcQAA..i&w=1386&h=727&hcb=2&ved=2ahUKEwijmO_hpu6IAxX8MzQIHYm_FgcQM3oECBcQAA",
             "Categorias": {
                 "NombreCategoria": "Bebidas",
                 "codigo": 2,
-                "foto": "https://www.example.com/bebidas.jpg"
+                "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fcms.wingstopmexico.com%2Fbebidas&psig=AOvVaw0qLKUwaUugYgPDGzUW11gk&ust=1727910484113000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD3g6em7ogDFQAAAAAdAAAAABAE"
             }
         },
         {
@@ -39,11 +39,11 @@ db.subcategorias.insertMany(
             "DescripcionDeSubcategoria": "Aperitivos saludables como almendras y nueces.",
             "tipoDeRotacion": "Lenta",
             "marca_de_la_subcategoria": "NutriSnack",
-            "foto": "https://www.example.com/frutos_secos.jpg",
+            "foto": "https:\/\/www.google.com\/imgres?q=frutos%20secos&imgurl=https%3A%2F%2Fwww.atida.com%2Fes-es%2Fblog%2Fwp-content%2Fuploads%2F2021%2F12%2F31-blog-rrss-fb.jpg&imgrefurl=https%3A%2F%2Fwww.atida.com%2Fes-es%2Fblog%2F2021%2F12%2Ffrutos-secos-engordan-beneficios-y-tipos%2F&docid=yt3lzLF0-99kuM&tbnid=amgkpCg4v6PYVM&vet=12ahUKEwjK1tXtpu6IAxWUGjQIHVcPJi8QM3oECBoQAA..i&w=1200&h=630&hcb=2&ved=2ahUKEwjK1tXtpu6IAxWUGjQIHVcPJi8QM3oECBoQAA",
             "Categorias": {
                 "NombreCategoria": "Aperitivos",
                 "codigo": 3,
-                "foto": "https://www.example.com/aperitivos.jpg"
+                "foto": "https:\/\/www.google.com\/imgres?q=aperitivos%7B&imgurl=https%3A%2F%2Fi.blogs.es%2F7f7b5d%2Ftartaletas_salmon%2F450_1000.jpg&imgrefurl=https%3A%2F%2Fwww.directoalpaladar.com%2Frecetas-de-aperitivos%2F57-aperitivos-y-canapes-sencillos-y-baratos&docid=fR-W_UU_UiH9_M&tbnid=yq4YW3PZvusexM&vet=12ahUKEwiC3p6xpu6IAxVICTQIHZStI7gQM3oECBwQAA..i&w=450&h=300&hcb=2&ved=2ahUKEwiC3p6xpu6IAxVICTQIHZStI7gQM3oECBwQAA"
             }
         },
         {
@@ -52,11 +52,11 @@ db.subcategorias.insertMany(
             "DescripcionDeSubcategoria": "Alimento básico en la dieta, disponible en varias formas.",
             "tipoDeRotacion": "Rápida",
             "marca_de_la_subcategoria": "Barilla",
-            "foto": "https://www.example.com/pasta.jpg",
+            "foto": "https:\/\/www.google.com\/imgres?q=pastas&imgurl=https%3A%2F%2Feditorial.foodandwineespanol.com%2Fwp-content%2Fuploads%2F2019%2F10%2Fdectada-pasta.webp&imgrefurl=https%3A%2F%2Ffoodandwineespanol.com%2Fsecciones%2Factualidad%2Festos-tipos-de-pasta-se-cuecen-mas-rapido%2F&docid=o6CALxMOodKQUM&tbnid=h-GWOvi0i9VjuM&vet=12ahUKEwjCx5r2pu6IAxXtIjQIHaMHKxQQM3oECFcQAA..i&w=2560&h=1440&hcb=2&ved=2ahUKEwjCx5r2pu6IAxXtIjQIHaMHKxQQM3oECFcQAA",
             "Categorias": {
                 "NombreCategoria": "Cereales",
                 "codigo": 4,
-                "foto": "https://www.example.com/cereales.jpg"
+                "foto": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcQ97O8lHydDQbbAnRp1Q1IaCroVWr73qWGGuA&s"
             }
         },
         {
@@ -65,11 +65,11 @@ db.subcategorias.insertMany(
             "DescripcionDeSubcategoria": "Vegetales congelados para una rápida preparación.",
             "tipoDeRotacion": "Lenta",
             "marca_de_la_subcategoria": "Green Garden",
-            "foto": "https://www.example.com/verduras_congeladas.jpg",
+            "foto": "https:\/\/www.google.com\/imgres?q=verduras&imgurl=https%3A%2F%2Fs2.abcstatics.com%2Fabc%2Fwww%2Fmultimedia%2Fbienestar%2F2024%2F04%2F30%2Fverduras-pocas-calorias-R3Vfbjx9Nok0nxp9QObH7xH-1200x840%40diario_abc.jpg&imgrefurl=https%3A%2F%2Fwww.abc.es%2Fbienestar%2Falimentacion%2Fverduras-calorias-repletas-nutrientes-20240430172000-nt.html&docid=X2-CAxKUzPACCM&tbnid=gPdYlVQtdPz5sM&vet=12ahUKEwjXoqD-pu6IAxWAKzQIHeCtEqAQM3oECGsQAA..i&w=1200&h=840&hcb=2&ved=2ahUKEwjXoqD-pu6IAxWAKzQIHeCtEqAQM3oECGsQAA",
             "Categorias": {
                 "NombreCategoria": "Congelados",
                 "codigo": 5,
-                "foto": "https://www.example.com/congelados.jpg"
+                "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fbecogalia.com%2Fcongelados-la-alternativa-rapida-saludable-una-buena-alimentacion-siglo-xxi%2F&psig=AOvVaw3UfUe4clGIdqDiLyL9uAX-&ust=1727910573856000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMDb4dKm7ogDFQAAAAAdAAAAABAE"
             }
         }
     ]

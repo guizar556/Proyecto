@@ -59,7 +59,6 @@ db.createCollection('transportes', {
                 Foto: {
                     bsonType: 'string',
                     pattern: "^https?://.+",
-                    description: "URL de la foto del vehículo, debe ser una cadena que comience con 'http://' o 'https://' y es obligatorio"
                 }
             }
         }
