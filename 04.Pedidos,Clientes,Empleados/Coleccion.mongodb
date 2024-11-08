@@ -12,7 +12,7 @@ db.createCollection('pedidos', {
     validator: {
         $jsonSchema: {
             bsonType: 'object',
-            required: ['codigo', 'fecha_pedido', 'Detalles', 'Empleados', 'Clientes', 'descripccion_Pedido'],
+            required: ['codigo', 'fecha_pedido', 'Empleados', 'Clientes', 'descripccion_Pedido'],
             properties: {
                 codigo: { 
                     bsonType: 'int' 
@@ -21,42 +21,26 @@ db.createCollection('pedidos', {
                     bsonType: 'string',
                     pattern: "^\\d{1,2}\\/\\w+\\/(19\\d{2}|20[0-4]\\d)$" 
                 },
-                Detalles: {
-                    bsonType: 'object',
-                    required: ['codigoD', 'cantidad', 'precioUnitario', 'codigoProducto'],
-                    properties: {
-                        codigoD: { 
-                            bsonType: 'int' 
-                        },
-                        cantidad: { 
-                            bsonType: 'int' 
-                        },
-                        precioUnitario: { 
-                            bsonType: 'int' 
-                        },
-                        codigoProducto: { 
-                            bsonType: 'int' 
-                        }
-                    }
-                },
                 Empleados: {
                     bsonType: 'object',
+                    required: ['CodigoEmpleado', 'Nombres', 'Apellidos'],
                     properties: {
                         CodigoEmpleado: { 
                             bsonType: 'int' 
                         },
                         Nombres: { 
-                            bsonType: 'string' ,
+                            bsonType: 'string',
                             pattern: "^[a-zA-ZÁÉÍÓÚáéíóúÑñ ]{1,40}$" 
                         },
                         Apellidos: { 
-                            bsonType: 'string' ,
+                            bsonType: 'string',
                             pattern: "^[a-zA-ZÁÉÍÓÚáéíóúÑñ ]{1,40}$" 
                         }
                     }
                 },
                 Clientes: {
                     bsonType: 'object',
+                    required: ['CodigoCliente', 'Nombres', 'Apellidos'],
                     properties: {
                         CodigoCliente: { 
                             bsonType: 'int' 
@@ -71,6 +55,29 @@ db.createCollection('pedidos', {
                         }
                     }
                 },
+                Dt: {
+                    bsonType: 'array',
+                    items: {
+                        bsonType: 'object',
+                        properties: {
+                            codigo: { 
+                                bsonType: 'int' 
+                            },
+                            cantidad: { 
+                                bsonType: 'int' 
+                            },
+                            precioUnitario: { 
+                                bsonType: 'int' 
+                            },
+                            codigoProductos: { 
+                                bsonType: 'int' 
+                            },NombreDelProducto:{
+                                bsonType: 'string'
+                            }
+
+                        }
+                    }
+                },
                 descripccion_Pedido: { 
                     bsonType: 'string' 
                 }
@@ -78,4 +85,3 @@ db.createCollection('pedidos', {
         }
     }
 });
-

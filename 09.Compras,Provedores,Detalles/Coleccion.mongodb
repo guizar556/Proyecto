@@ -4,69 +4,78 @@
 // Universidad: Tecnológico de Jiquilpan 
 // Proyecto: Cremería
 
-// Conectar y usar la base de datos Cremeria
 use("Cremeria");
 
 // Crear la colección con el esquema y validaciones si no existe
-use("Cremeria");
-
 db.createCollection('Compras', {
     validator: {
         $jsonSchema: {
             bsonType: 'object',
-            required: ['codigo', 'tipoDeCompra', 'Total_de_Compra', 'FechaCompra', 'estado_compra', 'Provedores', 'Dt'],
+            required: [
+                'codigo',
+                'tipoDeCompra',
+                'Total_de_Compra',
+                'FechaCompra',
+                'estado_compra'
+            ],
             properties: {
-                codigo: { bsonType: 'int' },
+                codigo: { 
+                    bsonType: 'int' 
+                },
                 tipoDeCompra: { 
-                    bsonType: 'string', 
-                    enum: ["Contado", "Crédito"],
+                    bsonType: 'string',
                 },
                 Total_de_Compra: { 
-                    bsonType: 'int',
-                    minimum: 0 
+                    bsonType: 'int' 
                 },
                 FechaCompra: { 
                     bsonType: 'string',
                     pattern: "^\\d{1,2}\\/\\w+\\/(19\\d{2}|20[0-4]\\d)$" 
                 },
                 estado_compra: { 
-                    bsonType: 'string', 
-                    enum: ["Completada", "Pendiente", "Cancelada"]
+                    bsonType: 'string',
                 },
                 Provedores: {
                     bsonType: 'object',
-                    required: ['codigo', 'Nombres', 'Apellidos'],
                     properties: {
-                        codigo: { bsonType: 'int' },
+                        codigo: { 
+                            bsonType: 'int' 
+                        },
                         Nombres: { 
-                            bsonType: 'string', 
-                            pattern: "^[A-Za-zÀ-ÿ ]{2,50}$" 
+                            bsonType: 'string',
+                            pattern: "^[a-zA-ZÁÉÍÓÚáéíóúÑñ\\s]{1,40}$" 
                         },
                         Apellidos: { 
-                            bsonType: 'string', 
-                            pattern: "^[A-Za-zÀ-ÿ ]{2,50}$" 
+                            bsonType: 'string',
+                            pattern: "^[a-zA-ZÁÉÍÓÚáéíóúÑñ\\s]{1,40}$" 
                         }
                     }
                 },
                 Dt: {
-                    bsonType: 'object',
-                    required: ['catidadProductos', 'PrecioUnitario', 'codigo', 'Descripccion', 'CodifoProducto'],
-                    properties: {
-                        catidadProductos: { 
-                            bsonType: 'int', 
-                            minimum: 1 
-                        },
-                        PrecioUnitario: { 
-                            bsonType: 'int', 
-                            minimum: 0 
-                        },
-                        codigo: { bsonType: 'int' },
-                        Descripccion: { 
-                            bsonType: 'string', 
-                            pattern: "^[A-Za-z0-9À-ÿ ]{5,200}$" 
-                        },
-                        CodifoProducto: { 
-                            bsonType: 'int' 
+                    bsonType: 'array',
+                    items: {
+                        bsonType: 'object',
+                        properties: {
+                            Cantidad_De_Productos_Comprados: { 
+                                bsonType: 'int' 
+                            },
+                            precioUnitario: { 
+                                bsonType: 'int' 
+                            },
+                            codigo: { 
+                                bsonType: 'int' 
+                            },
+                            descripccion: { 
+                                bsonType: 'string',
+                                pattern: "^[a-zA-ZÁÉÍÓÚáéíóúÑñ\\s0-9,.]{1,100}$" 
+                            },
+                            codigo_Producto: { 
+                                bsonType: 'int' 
+                            },
+                            NombreDelProducto: {
+                                bsonType: 'string',
+                                pattern: "^[a-zA-ZÁÉÍÓÚáéíóúÑñ\\s]{1,40}$" 
+                            }
                         }
                     }
                 }

@@ -8,403 +8,252 @@ use("Cremeria");
 db.Devoluciones.insertMany(
     [
         {
-            "codigo": 1,
-            "CantidadDeProductosDevueltos": 2,
-            "Descripccion": "Producto con fecha de caducidad vencida",
-            "FechaDevolcion": "12\/Septiembre\/2024",
+            "Devolucion_codigo": 1,
+            "DescripccionDeDevolucion": "Producto con fecha de caducidad vencida",
+            "FechaDevolucion": "12\/Septiembre\/2024",
             "montoDeRembolso": 300,
             "hora": "14:30:00",
             "DescripccionDeMedidasTomadas": "Reembolso completo y entrega de productos nuevos",
+            "foto_Devolucion": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fjordibordas.com%2Fblog%2Fcomo-reemplazar-la-mantequilla-por-ingredientes-de-origen-vegetal%2F&psig=AOvVaw0Fn8azuEQ_oFkLVVjmKetZ&ust=1727909738101000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOim2MKj7ogDFQAAAAAdAAAAABAE",
             "Cliente": {
                 "codigo": 1,
                 "Nombres": "Juan Carlos",
                 "Apellidos": "Gómez Pérez"
             },
-            "ProductoDevuelto": {
-                "codigo": 1,
-                "codigo_VP": 1,
-                "Observaciones": "Producto con fecha de caducidad vencida, debe ser retirado."
-            }
+            "ProductosDevueltos": [
+                {
+                    "ProductoDevolucion_codigo": 1,
+                    "codigo_Devolucion": 1,
+                    "Observaciones": "Producto con fecha de caducidad vencida, debe ser retirado.",
+                    "codigoVentaDt": 1,
+                    "precioUnitario": 150,
+                    "cantidad": 2
+                },
+                {
+                    "ProductoDevolucion_codigo": 2,
+                    "codigo_Devolucion": 1,
+                    "Observaciones": "Envase dañado, necesita reemplazo.",
+                    "codigoVentaDt": 2,
+                    "precioUnitario": 50,
+                    "cantidad": 5
+                },
+                {
+                    "ProductoDevolucion_codigo": 11,
+                    "codigo_Devolucion": 1,
+                    "Observaciones": "Producto fue devuelto por problemas de calidad.",
+                    "codigoVentaDt": 11,
+                    "precioUnitario": 150,
+                    "cantidad": 2
+                },
+                {
+                    "ProductoDevolucion_codigo": 12,
+                    "codigo_Devolucion": 1,
+                    "Observaciones": "Se debe mejorar el proceso de embalaje.",
+                    "codigoVentaDt": 12,
+                    "precioUnitario": 50,
+                    "cantidad": 5
+                }
+            ]
         },
         {
-            "codigo": 1,
-            "CantidadDeProductosDevueltos": 2,
-            "Descripccion": "Producto con fecha de caducidad vencida",
-            "FechaDevolcion": "12\/Septiembre\/2024",
-            "montoDeRembolso": 300,
-            "hora": "14:30:00",
-            "DescripccionDeMedidasTomadas": "Reembolso completo y entrega de productos nuevos",
-            "Cliente": {
-                "codigo": 1,
-                "Nombres": "Juan Carlos",
-                "Apellidos": "Gómez Pérez"
-            },
-            "ProductoDevuelto": {
-                "codigo": 2,
-                "codigo_VP": 2,
-                "Observaciones": "Envase dañado, necesita reemplazo."
-            }
-        },
-        {
-            "codigo": 2,
-            "CantidadDeProductosDevueltos": 1,
-            "Descripccion": "Envase dañado en el transporte",
-            "FechaDevolcion": "15\/Septiembre\/2024",
+            "Devolucion_codigo": 2,
+            "DescripccionDeDevolucion": "Envase dañado en el transporte",
+            "FechaDevolucion": "15\/Septiembre\/2024",
             "montoDeRembolso": 150,
             "hora": "10:45:00",
             "DescripccionDeMedidasTomadas": "Se reemplazó el producto dañado por uno en buen estado",
+            "foto_Devolucion": "https:\/\/www.google.com\/imgres?q=mantequilla&imgurl=https%3A%2F%2Fd1zc67o3u1epb0.cloudfront.net%2Fmedia%2Fcatalog%2Fproduct%2F6%2F4%2F6417-a.jpg%3Fwidth%3D265%26height%3D390%26store%3Ddefault%26image-type%3Dimage&imgrefurl=https%3A%2F%2Fwww.scorpion.com.mx%2Fmargarina-iberia-90-gramos.html&docid=LVs8zMrGW6mB-M&tbnid=Z17zD_mQ_3WTtM&vet=12ahUKEwiaydTBo-6IAxVcGTQIHWkjGB4QM3oECBUQAA..i&w=1200&h=1200&hcb=2&ved=2ahUKEwiaydTBo-6IAxVcGTQIHWkjGB4QM3oECBUQAA",
             "Cliente": {
                 "codigo": 2,
                 "Nombres": "María Luisa",
                 "Apellidos": "López Ramírez"
             },
-            "ProductoDevuelto": {
-                "codigo": 3,
-                "codigo_VP": 3,
-                "Observaciones": "Producto incorrecto, el cliente recibió un sabor diferente."
-            }
+            "ProductosDevueltos": [
+                {
+                    "ProductoDevolucion_codigo": 3,
+                    "codigo_Devolucion": 2,
+                    "Observaciones": "Producto incorrecto, el cliente recibió un sabor diferente.",
+                    "codigoVentaDt": 3,
+                    "precioUnitario": 75,
+                    "cantidad": 3
+                },
+                {
+                    "ProductoDevolucion_codigo": 4,
+                    "codigo_Devolucion": 2,
+                    "Observaciones": "El producto estaba en mal estado al recibirlo.",
+                    "codigoVentaDt": 4,
+                    "precioUnitario": 85,
+                    "cantidad": 1
+                },
+                {
+                    "ProductoDevolucion_codigo": 13,
+                    "codigo_Devolucion": 2,
+                    "Observaciones": "Se solicita el reembolso por el estado del producto.",
+                    "codigoVentaDt": 13,
+                    "precioUnitario": 75,
+                    "cantidad": 3
+                },
+                {
+                    "ProductoDevolucion_codigo": 14,
+                    "codigo_Devolucion": 2,
+                    "Observaciones": "Faltan instrucciones en el empaque.",
+                    "codigoVentaDt": 14,
+                    "precioUnitario": 85,
+                    "cantidad": 1
+                }
+            ]
         },
         {
-            "codigo": 2,
-            "CantidadDeProductosDevueltos": 1,
-            "Descripccion": "Envase dañado en el transporte",
-            "FechaDevolcion": "15\/Septiembre\/2024",
-            "montoDeRembolso": 150,
-            "hora": "10:45:00",
-            "DescripccionDeMedidasTomadas": "Se reemplazó el producto dañado por uno en buen estado",
-            "Cliente": {
-                "codigo": 2,
-                "Nombres": "María Luisa",
-                "Apellidos": "López Ramírez"
-            },
-            "ProductoDevuelto": {
-                "codigo": 4,
-                "codigo_VP": 4,
-                "Observaciones": "El producto estaba en mal estado al recibirlo."
-            }
-        },
-        {
-            "codigo": 3,
-            "CantidadDeProductosDevueltos": 3,
-            "Descripccion": "Pedido incorrecto, cliente recibió otro producto",
-            "FechaDevolcion": "18\/Agosto\/2024",
+            "Devolucion_codigo": 3,
+            "DescripccionDeDevolucion": "Pedido incorrecto, cliente recibió otro producto",
+            "FechaDevolucion": "18\/Agosto\/2024",
             "montoDeRembolso": 450,
             "hora": "16:20:00",
             "DescripccionDeMedidasTomadas": "Se corrigió el pedido y se devolvieron los productos correctos",
+            "foto_Devolucion": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fwww.directoalpaladar.com%2Frecetario%2Fcomo-hacer-sour-cream-crema-nata-agria-casera-receta-facilisima-lactosa&psig=AOvVaw2uaKObC02dBenGIYXPzDCG&ust=1727909714954000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDi07ej7ogDFQAAAAAdAAAAABAE",
             "Cliente": {
                 "codigo": 3,
                 "Nombres": "Pedro Antonio",
                 "Apellidos": "Martínez Díaz"
             },
-            "ProductoDevuelto": {
-                "codigo": 5,
-                "codigo_VP": 5,
-                "Observaciones": "Falta el etiquetado, se debe corregir."
-            }
+            "ProductosDevueltos": [
+                {
+                    "ProductoDevolucion_codigo": 5,
+                    "codigo_Devolucion": 3,
+                    "Observaciones": "Falta el etiquetado, se debe corregir.",
+                    "codigoVentaDt": 5,
+                    "precioUnitario": 180,
+                    "cantidad": 4
+                },
+                {
+                    "ProductoDevolucion_codigo": 6,
+                    "codigo_Devolucion": 3,
+                    "Observaciones": "Producto devuelto debido a insatisfacción del cliente.",
+                    "codigoVentaDt": 6,
+                    "precioUnitario": 150,
+                    "cantidad": 2
+                },
+                {
+                    "ProductoDevolucion_codigo": 15,
+                    "codigo_Devolucion": 3,
+                    "Observaciones": "Devolver producto defectuoso al proveedor.",
+                    "codigoVentaDt": 15,
+                    "precioUnitario": 180,
+                    "cantidad": 4
+                },
+                {
+                    "ProductoDevolucion_codigo": 16,
+                    "codigo_Devolucion": 3,
+                    "Observaciones": "El producto debe ser reemplazado por otro nuevo.",
+                    "codigoVentaDt": 16,
+                    "precioUnitario": 150,
+                    "cantidad": 2
+                }
+            ]
         },
         {
-            "codigo": 3,
-            "CantidadDeProductosDevueltos": 3,
-            "Descripccion": "Pedido incorrecto, cliente recibió otro producto",
-            "FechaDevolcion": "18\/Agosto\/2024",
-            "montoDeRembolso": 450,
-            "hora": "16:20:00",
-            "DescripccionDeMedidasTomadas": "Se corrigió el pedido y se devolvieron los productos correctos",
-            "Cliente": {
-                "codigo": 3,
-                "Nombres": "Pedro Antonio",
-                "Apellidos": "Martínez Díaz"
-            },
-            "ProductoDevuelto": {
-                "codigo": 6,
-                "codigo_VP": 1,
-                "Observaciones": "Producto devuelto debido a insatisfacción del cliente."
-            }
-        },
-        {
-            "codigo": 4,
-            "CantidadDeProductosDevueltos": 1,
-            "Descripccion": "Producto en mal estado, mala refrigeración",
-            "FechaDevolcion": "22\/Julio\/2024",
+            "Devolucion_codigo": 4,
+            "DescripccionDeDevolucion": "Producto en mal estado, mala refrigeración",
+            "FechaDevolucion": "22\/Julio\/2024",
             "montoDeRembolso": 200,
             "hora": "09:10:00",
             "DescripccionDeMedidasTomadas": "Se ofreció reembolso parcial y productos en buen estado",
+            "foto_Devolucion": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fclickabasto.com%2Fproducts%2Fyogurt-yoplait-natural-1-lt&psig=AOvVaw3G4CYZYvKiIwmgVcuQ9R4M&ust=1727909696457000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCICd666j7ogDFQAAAAAdAAAAABAE",
             "Cliente": {
                 "codigo": 4,
                 "Nombres": "Ana Sofía",
                 "Apellidos": "Hernández Sánchez"
             },
-            "ProductoDevuelto": {
-                "codigo": 7,
-                "codigo_VP": 2,
-                "Observaciones": "El producto presenta mal olor, no apto para consumo."
-            }
+            "ProductosDevueltos": [
+                {
+                    "ProductoDevolucion_codigo": 7,
+                    "codigo_Devolucion": 4,
+                    "Observaciones": "El producto presenta mal olor, no apto para consumo.",
+                    "codigoVentaDt": 7,
+                    "precioUnitario": 50,
+                    "cantidad": 5
+                },
+                {
+                    "ProductoDevolucion_codigo": 8,
+                    "codigo_Devolucion": 4,
+                    "Observaciones": "Requiere revisión de calidad, cliente insatisfecho.",
+                    "codigoVentaDt": 8,
+                    "precioUnitario": 75,
+                    "cantidad": 3
+                },
+                {
+                    "ProductoDevolucion_codigo": 17,
+                    "codigo_Devolucion": 4,
+                    "Observaciones": "Se encuentra en condiciones no adecuadas para la venta.",
+                    "codigoVentaDt": 17,
+                    "precioUnitario": 50,
+                    "cantidad": 5
+                },
+                {
+                    "ProductoDevolucion_codigo": 18,
+                    "codigo_Devolucion": 4,
+                    "Observaciones": "Mal manejo en el transporte, producto dañado.",
+                    "codigoVentaDt": 18,
+                    "precioUnitario": 75,
+                    "cantidad": 3
+                }
+            ]
         },
         {
-            "codigo": 4,
-            "CantidadDeProductosDevueltos": 1,
-            "Descripccion": "Producto en mal estado, mala refrigeración",
-            "FechaDevolcion": "22\/Julio\/2024",
-            "montoDeRembolso": 200,
-            "hora": "09:10:00",
-            "DescripccionDeMedidasTomadas": "Se ofreció reembolso parcial y productos en buen estado",
-            "Cliente": {
-                "codigo": 4,
-                "Nombres": "Ana Sofía",
-                "Apellidos": "Hernández Sánchez"
-            },
-            "ProductoDevuelto": {
-                "codigo": 8,
-                "codigo_VP": 3,
-                "Observaciones": "Requiere revisión de calidad, cliente insatisfecho."
-            }
-        },
-        {
-            "codigo": 5,
-            "CantidadDeProductosDevueltos": 4,
-            "Descripccion": "Cliente insatisfecho con la calidad del producto",
-            "FechaDevolcion": "25\/Junio\/2024",
+            "Devolucion_codigo": 5,
+            "DescripccionDeDevolucion": "Cliente insatisfecho con la calidad del producto",
+            "FechaDevolucion": "25\/Junio\/2024",
             "montoDeRembolso": 500,
             "hora": "13:55:00",
             "DescripccionDeMedidasTomadas": "Reembolso completo y revisión del lote de productos",
+            "foto_Devolucion": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fwww.recetasnestlecam.com%2Fescuela-de-sabor%2Fingredientes%2Fproductos-lacteos&psig=AOvVaw1DWfAZatoH_M3f6Ql-Fxyt&ust=1727909655883000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiPw5uj7ogDFQAAAAAdAAAAABAO",
             "Cliente": {
                 "codigo": 5,
                 "Nombres": "Luis Fernando",
                 "Apellidos": "Castro Ortiz"
             },
-            "ProductoDevuelto": {
-                "codigo": 9,
-                "codigo_VP": 4,
-                "Observaciones": "Envase roto, necesita un nuevo embalaje."
-            }
-        },
-        {
-            "codigo": 5,
-            "CantidadDeProductosDevueltos": 4,
-            "Descripccion": "Cliente insatisfecho con la calidad del producto",
-            "FechaDevolcion": "25\/Junio\/2024",
-            "montoDeRembolso": 500,
-            "hora": "13:55:00",
-            "DescripccionDeMedidasTomadas": "Reembolso completo y revisión del lote de productos",
-            "Cliente": {
-                "codigo": 5,
-                "Nombres": "Luis Fernando",
-                "Apellidos": "Castro Ortiz"
-            },
-            "ProductoDevuelto": {
-                "codigo": 10,
-                "codigo_VP": 5,
-                "Observaciones": "No coincide con la descripción del pedido."
-            }
-        },
-        {
-            "codigo": 1,
-            "CantidadDeProductosDevueltos": 2,
-            "Descripccion": "Producto con fecha de caducidad vencida",
-            "FechaDevolcion": "12\/Septiembre\/2024",
-            "montoDeRembolso": 300,
-            "hora": "14:30:00",
-            "DescripccionDeMedidasTomadas": "Reembolso completo y entrega de productos nuevos",
-            "Cliente": {
-                "codigo": 1,
-                "Nombres": "Juan Carlos",
-                "Apellidos": "Gómez Pérez"
-            },
-            "ProductoDevuelto": {
-                "codigo": 11,
-                "codigo_VP": 1,
-                "Observaciones": "Producto fue devuelto por problemas de calidad."
-            }
-        },
-        {
-            "codigo": 1,
-            "CantidadDeProductosDevueltos": 2,
-            "Descripccion": "Producto con fecha de caducidad vencida",
-            "FechaDevolcion": "12\/Septiembre\/2024",
-            "montoDeRembolso": 300,
-            "hora": "14:30:00",
-            "DescripccionDeMedidasTomadas": "Reembolso completo y entrega de productos nuevos",
-            "Cliente": {
-                "codigo": 1,
-                "Nombres": "Juan Carlos",
-                "Apellidos": "Gómez Pérez"
-            },
-            "ProductoDevuelto": {
-                "codigo": 12,
-                "codigo_VP": 2,
-                "Observaciones": "Se debe mejorar el proceso de embalaje."
-            }
-        },
-        {
-            "codigo": 2,
-            "CantidadDeProductosDevueltos": 1,
-            "Descripccion": "Envase dañado en el transporte",
-            "FechaDevolcion": "15\/Septiembre\/2024",
-            "montoDeRembolso": 150,
-            "hora": "10:45:00",
-            "DescripccionDeMedidasTomadas": "Se reemplazó el producto dañado por uno en buen estado",
-            "Cliente": {
-                "codigo": 2,
-                "Nombres": "María Luisa",
-                "Apellidos": "López Ramírez"
-            },
-            "ProductoDevuelto": {
-                "codigo": 13,
-                "codigo_VP": 3,
-                "Observaciones": "Se solicita el reembolso por el estado del producto."
-            }
-        },
-        {
-            "codigo": 2,
-            "CantidadDeProductosDevueltos": 1,
-            "Descripccion": "Envase dañado en el transporte",
-            "FechaDevolcion": "15\/Septiembre\/2024",
-            "montoDeRembolso": 150,
-            "hora": "10:45:00",
-            "DescripccionDeMedidasTomadas": "Se reemplazó el producto dañado por uno en buen estado",
-            "Cliente": {
-                "codigo": 2,
-                "Nombres": "María Luisa",
-                "Apellidos": "López Ramírez"
-            },
-            "ProductoDevuelto": {
-                "codigo": 14,
-                "codigo_VP": 4,
-                "Observaciones": "Faltan instrucciones en el empaque."
-            }
-        },
-        {
-            "codigo": 3,
-            "CantidadDeProductosDevueltos": 3,
-            "Descripccion": "Pedido incorrecto, cliente recibió otro producto",
-            "FechaDevolcion": "18\/Agosto\/2024",
-            "montoDeRembolso": 450,
-            "hora": "16:20:00",
-            "DescripccionDeMedidasTomadas": "Se corrigió el pedido y se devolvieron los productos correctos",
-            "Cliente": {
-                "codigo": 3,
-                "Nombres": "Pedro Antonio",
-                "Apellidos": "Martínez Díaz"
-            },
-            "ProductoDevuelto": {
-                "codigo": 15,
-                "codigo_VP": 5,
-                "Observaciones": "Devolver producto defectuoso al proveedor."
-            }
-        },
-        {
-            "codigo": 3,
-            "CantidadDeProductosDevueltos": 3,
-            "Descripccion": "Pedido incorrecto, cliente recibió otro producto",
-            "FechaDevolcion": "18\/Agosto\/2024",
-            "montoDeRembolso": 450,
-            "hora": "16:20:00",
-            "DescripccionDeMedidasTomadas": "Se corrigió el pedido y se devolvieron los productos correctos",
-            "Cliente": {
-                "codigo": 3,
-                "Nombres": "Pedro Antonio",
-                "Apellidos": "Martínez Díaz"
-            },
-            "ProductoDevuelto": {
-                "codigo": 16,
-                "codigo_VP": 1,
-                "Observaciones": "El producto debe ser reemplazado por otro nuevo."
-            }
-        },
-        {
-            "codigo": 4,
-            "CantidadDeProductosDevueltos": 1,
-            "Descripccion": "Producto en mal estado, mala refrigeración",
-            "FechaDevolcion": "22\/Julio\/2024",
-            "montoDeRembolso": 200,
-            "hora": "09:10:00",
-            "DescripccionDeMedidasTomadas": "Se ofreció reembolso parcial y productos en buen estado",
-            "Cliente": {
-                "codigo": 4,
-                "Nombres": "Ana Sofía",
-                "Apellidos": "Hernández Sánchez"
-            },
-            "ProductoDevuelto": {
-                "codigo": 17,
-                "codigo_VP": 2,
-                "Observaciones": "Se encuentra en condiciones no adecuadas para la venta."
-            }
-        },
-        {
-            "codigo": 4,
-            "CantidadDeProductosDevueltos": 1,
-            "Descripccion": "Producto en mal estado, mala refrigeración",
-            "FechaDevolcion": "22\/Julio\/2024",
-            "montoDeRembolso": 200,
-            "hora": "09:10:00",
-            "DescripccionDeMedidasTomadas": "Se ofreció reembolso parcial y productos en buen estado",
-            "Cliente": {
-                "codigo": 4,
-                "Nombres": "Ana Sofía",
-                "Apellidos": "Hernández Sánchez"
-            },
-            "ProductoDevuelto": {
-                "codigo": 18,
-                "codigo_VP": 3,
-                "Observaciones": "Mal manejo en el transporte, producto dañado."
-            }
-        },
-        {
-            "codigo": 5,
-            "CantidadDeProductosDevueltos": 4,
-            "Descripccion": "Cliente insatisfecho con la calidad del producto",
-            "FechaDevolcion": "25\/Junio\/2024",
-            "montoDeRembolso": 500,
-            "hora": "13:55:00",
-            "DescripccionDeMedidasTomadas": "Reembolso completo y revisión del lote de productos",
-            "Cliente": {
-                "codigo": 5,
-                "Nombres": "Luis Fernando",
-                "Apellidos": "Castro Ortiz"
-            },
-            "ProductoDevuelto": {
-                "codigo": 19,
-                "codigo_VP": 4,
-                "Observaciones": "Devolución por insatisfacción, producto no cumple expectativas."
-            }
-        },
-        {
-            "codigo": 5,
-            "CantidadDeProductosDevueltos": 4,
-            "Descripccion": "Cliente insatisfecho con la calidad del producto",
-            "FechaDevolcion": "25\/Junio\/2024",
-            "montoDeRembolso": 500,
-            "hora": "13:55:00",
-            "DescripccionDeMedidasTomadas": "Reembolso completo y revisión del lote de productos",
-            "Cliente": {
-                "codigo": 5,
-                "Nombres": "Luis Fernando",
-                "Apellidos": "Castro Ortiz"
-            },
-            "ProductoDevuelto": {
-                "codigo": 20,
-                "codigo_VP": 5,
-                "Observaciones": "Solicitar revisión de lote de productos devueltos."
-            }
-        },
-        {
-            "codigo": 5,
-            "CantidadDeProductosDevueltos": 4,
-            "Descripccion": "Cliente insatisfecho con la calidad del producto",
-            "FechaDevolcion": "25\/Junio\/2024",
-            "montoDeRembolso": 500,
-            "hora": "13:55:00",
-            "DescripccionDeMedidasTomadas": "Reembolso completo y revisión del lote de productos",
-            "Cliente": {
-                "codigo": 5,
-                "Nombres": "Luis Fernando",
-                "Apellidos": "Castro Ortiz"
-            },
-            "ProductoDevuelto": {
-                "codigo": 23,
-                "codigo_VP": 3,
-                "Observaciones": "Producto devuelto debido a un defecto de fabricación."
-            }
+            "ProductosDevueltos": [
+                {
+                    "ProductoDevolucion_codigo": 9,
+                    "codigo_Devolucion": 5,
+                    "Observaciones": "Envase roto, necesita un nuevo embalaje.",
+                    "codigoVentaDt": 9,
+                    "precioUnitario": 85,
+                    "cantidad": 1
+                },
+                {
+                    "ProductoDevolucion_codigo": 10,
+                    "codigo_Devolucion": 5,
+                    "Observaciones": "No coincide con la descripción del pedido.",
+                    "codigoVentaDt": 10,
+                    "precioUnitario": 180,
+                    "cantidad": 4
+                },
+                {
+                    "ProductoDevolucion_codigo": 19,
+                    "codigo_Devolucion": 5,
+                    "Observaciones": "Devolución por insatisfacción, producto no cumple expectativas.",
+                    "codigoVentaDt": 19,
+                    "precioUnitario": 85,
+                    "cantidad": 1
+                },
+                {
+                    "ProductoDevolucion_codigo": 20,
+                    "codigo_Devolucion": 5,
+                    "Observaciones": "Solicitar revisión de lote de productos devueltos.",
+                    "codigoVentaDt": 20,
+                    "precioUnitario": 180,
+                    "cantidad": 4
+                },
+                {
+                    "ProductoDevolucion_codigo": 23,
+                    "codigo_Devolucion": 5,
+                    "Observaciones": "Producto devuelto debido a un defecto de fabricación.",
+                    "codigoVentaDt": 23,
+                    "precioUnitario": 75,
+                    "cantidad": 3
+                }
+            ]
         }
     ]
 );

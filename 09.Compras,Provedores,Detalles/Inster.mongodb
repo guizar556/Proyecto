@@ -18,392 +18,241 @@ db.Compras.insertMany(
                 "Nombres": "Juan Pablo",
                 "Apellidos": "González Hernández"
             },
-            "Dt": {
-                "catidadProductos": 50,
-                "PrecioUnitario": 10,
-                "codigo": 1,
-                "Descripccion": "Compra de manzanas frescas",
-                "CodifoProducto": 1
-            }
+            "Dt": [
+                {
+                    "Cantidad_De_Productos_Comprados": 50,
+                    "precioUnitario": 10,
+                    "codigo": 1,
+                    "descripccion": "Compra de manzanas frescas",
+                    "codigo_Producto": 1,
+                    "NombreDelProducto": "Queso Fresco"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 100,
+                    "precioUnitario": 12,
+                    "codigo": 2,
+                    "descripccion": "Compra de naranjas de alta calidad",
+                    "codigo_Producto": 2,
+                    "NombreDelProducto": "Leche Deslactosada"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 150,
+                    "precioUnitario": 8,
+                    "codigo": 3,
+                    "descripccion": "Compra de plátanos maduros",
+                    "codigo_Producto": 3,
+                    "NombreDelProducto": "Yogur Natural"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 75,
+                    "precioUnitario": 15,
+                    "codigo": 4,
+                    "descripccion": "Compra de queso fresco",
+                    "codigo_Producto": 4,
+                    "NombreDelProducto": "Crema Agria"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 60,
+                    "precioUnitario": 20,
+                    "codigo": 5,
+                    "descripccion": "Compra de yogur natural",
+                    "codigo_Producto": 5,
+                    "NombreDelProducto": "Mantequilla"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 10,
+                    "precioUnitario": 25,
+                    "codigo": 21,
+                    "descripccion": "Compra de productos lácteos",
+                    "codigo_Producto": 5,
+                    "NombreDelProducto": "Mantequilla"
+                }
+            ]
         },
         {
-            "codigo": 1,
-            "tipoDeCompra": "Contado",
-            "Total_de_Compra": 15000,
-            "FechaCompra": "5\/Octubre\/2023",
-            "estado_compra": "Completada",
+            "codigo": 2,
+            "tipoDeCompra": "Crédito",
+            "Total_de_Compra": 20000,
+            "FechaCompra": "12\/Septiembre\/2023",
+            "estado_compra": "Pendiente",
             "Provedores": {
-                "codigo": 1,
-                "Nombres": "Juan Pablo",
-                "Apellidos": "González Hernández"
-            },
-            "Dt": {
-                "catidadProductos": 100,
-                "PrecioUnitario": 12,
                 "codigo": 2,
-                "Descripccion": "Compra de naranjas de alta calidad",
-                "CodifoProducto": 2
-            }
+                "Nombres": "María José",
+                "Apellidos": "López Pérez"
+            },
+            "Dt": [
+                {
+                    "Cantidad_De_Productos_Comprados": 120,
+                    "precioUnitario": 18,
+                    "codigo": 6,
+                    "descripccion": "Compra de leche entera",
+                    "codigo_Producto": 1,
+                    "NombreDelProducto": "Queso Fresco"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 180,
+                    "precioUnitario": 25,
+                    "codigo": 7,
+                    "descripccion": "Compra de huevos orgánicos",
+                    "codigo_Producto": 2,
+                    "NombreDelProducto": "Leche Deslactosada"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 95,
+                    "precioUnitario": 22,
+                    "codigo": 8,
+                    "descripccion": "Compra de mantequilla sin sal",
+                    "codigo_Producto": 3,
+                    "NombreDelProducto": "Yogur Natural"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 70,
+                    "precioUnitario": 21,
+                    "codigo": 9,
+                    "descripccion": "Compra de crema ácida",
+                    "codigo_Producto": 4,
+                    "NombreDelProducto": "Crema Agria"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 130,
+                    "precioUnitario": 19,
+                    "codigo": 10,
+                    "descripccion": "Compra de pan integral",
+                    "codigo_Producto": 5,
+                    "NombreDelProducto": "Mantequilla"
+                }
+            ]
         },
         {
-            "codigo": 1,
+            "codigo": 3,
             "tipoDeCompra": "Contado",
-            "Total_de_Compra": 15000,
-            "FechaCompra": "5\/Octubre\/2023",
-            "estado_compra": "Completada",
+            "Total_de_Compra": 12000,
+            "FechaCompra": "25\/Agosto\/2023",
+            "estado_compra": "Cancelada",
             "Provedores": {
-                "codigo": 1,
-                "Nombres": "Juan Pablo",
-                "Apellidos": "González Hernández"
-            },
-            "Dt": {
-                "catidadProductos": 150,
-                "PrecioUnitario": 8,
                 "codigo": 3,
-                "Descripccion": "Compra de plátanos maduros",
-                "CodifoProducto": 3
-            }
+                "Nombres": "Carlos ",
+                "Apellidos": "Ramírez Soto"
+            },
+            "Dt": [
+                {
+                    "Cantidad_De_Productos_Comprados": 90,
+                    "precioUnitario": 15,
+                    "codigo": 11,
+                    "descripccion": "Compra de arroz integral",
+                    "codigo_Producto": 1,
+                    "NombreDelProducto": "Queso Fresco"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 50,
+                    "precioUnitario": 9,
+                    "codigo": 12,
+                    "descripccion": "Compra de avena en hojuelas",
+                    "codigo_Producto": 2,
+                    "NombreDelProducto": "Leche Deslactosada"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 110,
+                    "precioUnitario": 12,
+                    "codigo": 13,
+                    "descripccion": "Compra de pasta integral",
+                    "codigo_Producto": 3,
+                    "NombreDelProducto": "Yogur Natural"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 200,
+                    "precioUnitario": 30,
+                    "codigo": 14,
+                    "descripccion": "Compra de aceite de oliva",
+                    "codigo_Producto": 4,
+                    "NombreDelProducto": "Crema Agria"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 100,
+                    "precioUnitario": 24,
+                    "codigo": 15,
+                    "descripccion": "Compra de miel orgánica",
+                    "codigo_Producto": 5,
+                    "NombreDelProducto": "Mantequilla"
+                }
+            ]
         },
         {
-            "codigo": 1,
-            "tipoDeCompra": "Contado",
-            "Total_de_Compra": 15000,
-            "FechaCompra": "5\/Octubre\/2023",
+            "codigo": 4,
+            "tipoDeCompra": "Crédito",
+            "Total_de_Compra": 25000,
+            "FechaCompra": "18\/Julio\/2023",
             "estado_compra": "Completada",
             "Provedores": {
-                "codigo": 1,
-                "Nombres": "Juan Pablo",
-                "Apellidos": "González Hernández"
-            },
-            "Dt": {
-                "catidadProductos": 75,
-                "PrecioUnitario": 15,
                 "codigo": 4,
-                "Descripccion": "Compra de queso fresco",
-                "CodifoProducto": 4
-            }
+                "Nombres": "Sofía Elizabeth",
+                "Apellidos": "Martínez García"
+            },
+            "Dt": [
+                {
+                    "Cantidad_De_Productos_Comprados": 140,
+                    "precioUnitario": 28,
+                    "codigo": 16,
+                    "descripccion": "Compra de café en grano",
+                    "codigo_Producto": 1,
+                    "NombreDelProducto": "Queso Fresco"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 160,
+                    "precioUnitario": 10,
+                    "codigo": 17,
+                    "descripccion": "Compra de galletas de avena",
+                    "codigo_Producto": 2,
+                    "NombreDelProducto": "Leche Deslactosada"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 75,
+                    "precioUnitario": 15,
+                    "codigo": 18,
+                    "descripccion": "Compra de chocolate amargo",
+                    "codigo_Producto": 3,
+                    "NombreDelProducto": "Yogur Natural"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 110,
+                    "precioUnitario": 14,
+                    "codigo": 19,
+                    "descripccion": "Compra de salsa de tomate",
+                    "codigo_Producto": 4,
+                    "NombreDelProducto": "Crema Agria"
+                },
+                {
+                    "Cantidad_De_Productos_Comprados": 140,
+                    "precioUnitario": 5,
+                    "codigo": 20,
+                    "descripccion": "Compra de agua mineral",
+                    "codigo_Producto": 5,
+                    "NombreDelProducto": "Mantequilla"
+                }
+            ]
         },
         {
-            "codigo": 1,
+            "codigo": 5,
             "tipoDeCompra": "Contado",
-            "Total_de_Compra": 15000,
-            "FechaCompra": "5\/Octubre\/2023",
-            "estado_compra": "Completada",
+            "Total_de_Compra": 18000,
+            "FechaCompra": "30\/Junio\/2023",
+            "estado_compra": "Pendiente",
             "Provedores": {
-                "codigo": 1,
-                "Nombres": "Juan Pablo",
-                "Apellidos": "González Hernández"
-            },
-            "Dt": {
-                "catidadProductos": 60,
-                "PrecioUnitario": 20,
                 "codigo": 5,
-                "Descripccion": "Compra de yogur natural",
-                "CodifoProducto": 5
+                "Nombres": "Luis Antonio",
+                "Apellidos": "Fernández Díaz"
             }
         },
         {
-            "codigo": 2,
-            "tipoDeCompra": "Crédito",
-            "Total_de_Compra": 20000,
-            "FechaCompra": "12\/Septiembre\/2023",
-            "estado_compra": "Pendiente",
-            "Provedores": {
-                "codigo": 2,
-                "Nombres": "María José",
-                "Apellidos": "López Pérez"
-            },
-            "Dt": {
-                "catidadProductos": 120,
-                "PrecioUnitario": 18,
-                "codigo": 6,
-                "Descripccion": "Compra de leche entera",
-                "CodifoProducto": 1
-            }
-        },
-        {
-            "codigo": 2,
-            "tipoDeCompra": "Crédito",
-            "Total_de_Compra": 20000,
-            "FechaCompra": "12\/Septiembre\/2023",
-            "estado_compra": "Pendiente",
-            "Provedores": {
-                "codigo": 2,
-                "Nombres": "María José",
-                "Apellidos": "López Pérez"
-            },
-            "Dt": {
-                "catidadProductos": 180,
-                "PrecioUnitario": 25,
-                "codigo": 7,
-                "Descripccion": "Compra de huevos orgánicos",
-                "CodifoProducto": 2
-            }
-        },
-        {
-            "codigo": 2,
-            "tipoDeCompra": "Crédito",
-            "Total_de_Compra": 20000,
-            "FechaCompra": "12\/Septiembre\/2023",
-            "estado_compra": "Pendiente",
-            "Provedores": {
-                "codigo": 2,
-                "Nombres": "María José",
-                "Apellidos": "López Pérez"
-            },
-            "Dt": {
-                "catidadProductos": 95,
-                "PrecioUnitario": 22,
-                "codigo": 8,
-                "Descripccion": "Compra de mantequilla sin sal",
-                "CodifoProducto": 3
-            }
-        },
-        {
-            "codigo": 2,
-            "tipoDeCompra": "Crédito",
-            "Total_de_Compra": 20000,
-            "FechaCompra": "12\/Septiembre\/2023",
-            "estado_compra": "Pendiente",
-            "Provedores": {
-                "codigo": 2,
-                "Nombres": "María José",
-                "Apellidos": "López Pérez"
-            },
-            "Dt": {
-                "catidadProductos": 70,
-                "PrecioUnitario": 21,
-                "codigo": 9,
-                "Descripccion": "Compra de crema ácida",
-                "CodifoProducto": 4
-            }
-        },
-        {
-            "codigo": 2,
-            "tipoDeCompra": "Crédito",
-            "Total_de_Compra": 20000,
-            "FechaCompra": "12\/Septiembre\/2023",
-            "estado_compra": "Pendiente",
-            "Provedores": {
-                "codigo": 2,
-                "Nombres": "María José",
-                "Apellidos": "López Pérez"
-            },
-            "Dt": {
-                "catidadProductos": 130,
-                "PrecioUnitario": 19,
-                "codigo": 10,
-                "Descripccion": "Compra de pan integral",
-                "CodifoProducto": 5
-            }
-        },
-        {
-            "codigo": 3,
-            "tipoDeCompra": "Contado",
-            "Total_de_Compra": 12000,
-            "FechaCompra": "25\/Agosto\/2023",
-            "estado_compra": "Cancelada",
-            "Provedores": {
-                "codigo": 3,
-                "Nombres": "Carlos ",
-                "Apellidos": "Ramírez Soto"
-            },
-            "Dt": {
-                "catidadProductos": 90,
-                "PrecioUnitario": 15,
-                "codigo": 11,
-                "Descripccion": "Compra de arroz integral",
-                "CodifoProducto": 1
-            }
-        },
-        {
-            "codigo": 3,
-            "tipoDeCompra": "Contado",
-            "Total_de_Compra": 12000,
-            "FechaCompra": "25\/Agosto\/2023",
-            "estado_compra": "Cancelada",
-            "Provedores": {
-                "codigo": 3,
-                "Nombres": "Carlos ",
-                "Apellidos": "Ramírez Soto"
-            },
-            "Dt": {
-                "catidadProductos": 50,
-                "PrecioUnitario": 9,
-                "codigo": 12,
-                "Descripccion": "Compra de avena en hojuelas",
-                "CodifoProducto": 2
-            }
-        },
-        {
-            "codigo": 3,
-            "tipoDeCompra": "Contado",
-            "Total_de_Compra": 12000,
-            "FechaCompra": "25\/Agosto\/2023",
-            "estado_compra": "Cancelada",
-            "Provedores": {
-                "codigo": 3,
-                "Nombres": "Carlos ",
-                "Apellidos": "Ramírez Soto"
-            },
-            "Dt": {
-                "catidadProductos": 110,
-                "PrecioUnitario": 12,
-                "codigo": 13,
-                "Descripccion": "Compra de pasta integral",
-                "CodifoProducto": 3
-            }
-        },
-        {
-            "codigo": 3,
-            "tipoDeCompra": "Contado",
-            "Total_de_Compra": 12000,
-            "FechaCompra": "25\/Agosto\/2023",
-            "estado_compra": "Cancelada",
-            "Provedores": {
-                "codigo": 3,
-                "Nombres": "Carlos ",
-                "Apellidos": "Ramírez Soto"
-            },
-            "Dt": {
-                "catidadProductos": 200,
-                "PrecioUnitario": 30,
-                "codigo": 14,
-                "Descripccion": "Compra de aceite de oliva",
-                "CodifoProducto": 4
-            }
-        },
-        {
-            "codigo": 3,
-            "tipoDeCompra": "Contado",
-            "Total_de_Compra": 12000,
-            "FechaCompra": "25\/Agosto\/2023",
-            "estado_compra": "Cancelada",
-            "Provedores": {
-                "codigo": 3,
-                "Nombres": "Carlos ",
-                "Apellidos": "Ramírez Soto"
-            },
-            "Dt": {
-                "catidadProductos": 100,
-                "PrecioUnitario": 24,
-                "codigo": 15,
-                "Descripccion": "Compra de miel orgánica",
-                "CodifoProducto": 5
-            }
-        },
-        {
-            "codigo": 4,
-            "tipoDeCompra": "Crédito",
-            "Total_de_Compra": 25000,
-            "FechaCompra": "18\/Julio\/2023",
+            "codigo": 6,
+            "tipoDeCompra": "Mayorista",
+            "Total_de_Compra": 255,
+            "FechaCompra": "10\/Octubre\/2024",
             "estado_compra": "Completada",
             "Provedores": {
-                "codigo": 4,
-                "Nombres": "Sofía Elizabeth",
-                "Apellidos": "Martínez García"
-            },
-            "Dt": {
-                "catidadProductos": 140,
-                "PrecioUnitario": 28,
-                "codigo": 16,
-                "Descripccion": "Compra de café en grano",
-                "CodifoProducto": 1
-            }
-        },
-        {
-            "codigo": 4,
-            "tipoDeCompra": "Crédito",
-            "Total_de_Compra": 25000,
-            "FechaCompra": "18\/Julio\/2023",
-            "estado_compra": "Completada",
-            "Provedores": {
-                "codigo": 4,
-                "Nombres": "Sofía Elizabeth",
-                "Apellidos": "Martínez García"
-            },
-            "Dt": {
-                "catidadProductos": 160,
-                "PrecioUnitario": 10,
-                "codigo": 17,
-                "Descripccion": "Compra de galletas de avena",
-                "CodifoProducto": 2
-            }
-        },
-        {
-            "codigo": 4,
-            "tipoDeCompra": "Crédito",
-            "Total_de_Compra": 25000,
-            "FechaCompra": "18\/Julio\/2023",
-            "estado_compra": "Completada",
-            "Provedores": {
-                "codigo": 4,
-                "Nombres": "Sofía Elizabeth",
-                "Apellidos": "Martínez García"
-            },
-            "Dt": {
-                "catidadProductos": 75,
-                "PrecioUnitario": 15,
-                "codigo": 18,
-                "Descripccion": "Compra de chocolate amargo",
-                "CodifoProducto": 3
-            }
-        },
-        {
-            "codigo": 4,
-            "tipoDeCompra": "Crédito",
-            "Total_de_Compra": 25000,
-            "FechaCompra": "18\/Julio\/2023",
-            "estado_compra": "Completada",
-            "Provedores": {
-                "codigo": 4,
-                "Nombres": "Sofía Elizabeth",
-                "Apellidos": "Martínez García"
-            },
-            "Dt": {
-                "catidadProductos": 110,
-                "PrecioUnitario": 14,
-                "codigo": 19,
-                "Descripccion": "Compra de salsa de tomate",
-                "CodifoProducto": 4
-            }
-        },
-        {
-            "codigo": 4,
-            "tipoDeCompra": "Crédito",
-            "Total_de_Compra": 25000,
-            "FechaCompra": "18\/Julio\/2023",
-            "estado_compra": "Completada",
-            "Provedores": {
-                "codigo": 4,
-                "Nombres": "Sofía Elizabeth",
-                "Apellidos": "Martínez García"
-            },
-            "Dt": {
-                "catidadProductos": 140,
-                "PrecioUnitario": 5,
-                "codigo": 20,
-                "Descripccion": "Compra de agua mineral",
-                "CodifoProducto": 5
-            }
-        },
-        {
-            "codigo": 1,
-            "tipoDeCompra": "Contado",
-            "Total_de_Compra": 15000,
-            "FechaCompra": "5\/Octubre\/2023",
-            "estado_compra": "Completada",
-            "Provedores": {
-                "codigo": 1,
-                "Nombres": "Juan Pablo",
-                "Apellidos": "González Hernández"
-            },
-            "Dt": {
-                "catidadProductos": 10,
-                "PrecioUnitario": 25,
-                "codigo": 21,
-                "Descripccion": "Compra de productos lácteos",
-                "CodifoProducto": 5
+                "codigo": 5,
+                "Nombres": "Luis Antonio",
+                "Apellidos": "Fernández Díaz"
             }
         }
     ]

@@ -18,17 +18,41 @@ db.provedores.insertMany(
                 "Avenida": "Santa Inés",
                 "CodigoPostal": 59035
             },
-            "FechaInicioRelacion": "1/5/2020",
+            "FechaInicioRelacion": "1\/5\/2020",
             "RFC": "GONJ800501XYZ",
             "correo_electronico": "juan.gonzalez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
             "telefono": "1234567890",
-            "Dt": {
-                "codigo": 1,
-                "precio": 15,
-                "caracteristicas": "Manzanas rojas frescas de alta calidad",
-                "CodigoProducto": 1
-            }
+            "foto": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fpxhere.com%2Fes%2Fphoto%2F1412284&psig=AOvVaw3RJSPmiJcEUazRjuEKzo_Q&ust=1727910369560000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjR5--l7ogDFQAAAAAdAAAAABAE",
+            "Dt": [
+                {
+                    "codigo": 1,
+                    "precio": 15,
+                    "caracteristicas": "Manzanas rojas frescas de alta calidad",
+                    "codigo_Producto": 1,
+                    "NombreDelProducto": "Queso Fresco"
+                },
+                {
+                    "codigo": 10,
+                    "precio": 6,
+                    "caracteristicas": "Pan integral horneado",
+                    "codigo_Producto": 5,
+                    "NombreDelProducto": "Mantequilla"
+                },
+                {
+                    "codigo": 14,
+                    "precio": 25,
+                    "caracteristicas": "Aceite de oliva virgen extra",
+                    "codigo_Producto": 4,
+                    "NombreDelProducto": "Crema Agria"
+                },
+                {
+                    "codigo": 18,
+                    "precio": 30,
+                    "caracteristicas": "Chocolate amargo, 85% cacao",
+                    "codigo_Producto": 3,
+                    "NombreDelProducto": "Yogur Natural"
+                }
+            ]
         },
         {
             "codigo": 2,
@@ -41,17 +65,41 @@ db.provedores.insertMany(
                 "Avenida": "Morelos",
                 "CodigoPostal": 59050
             },
-            "FechaInicioRelacion": "15/3/2021",
+            "FechaInicioRelacion": "15\/3\/2021",
             "RFC": "LOPM900214ABC",
             "correo_electronico": "maria.lopez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
             "telefono": "2345678901",
-            "Dt": {
-                "codigo": 2,
-                "precio": 20,
-                "caracteristicas": "Naranjas jugosas, variedad Valencia",
-                "CodigoProducto": 2
-            }
+            "foto": "https:\/\/www.google.com\/imgres?q=imagenes%20de%20poersonas%20de%20frente&imgurl=https%3A%2F%2Fst4.depositphotos.com%2F1049680%2F20734%2Fi%2F450%2Fdepositphotos_207343968-stock-photo-young-hipster-man-happy-face.jpg&imgrefurl=https%3A%2F%2Fdepositphotos.com%2Fes%2Fphotos%2Fpersona-de-frente.html&docid=UrziSsfShHjyXM&tbnid=m-aEXQSQKmkwQM&vet=12ahUKEwjopMzupe6IAxVyHDQIHX1HCRkQM3oECCcQAA..i&w=600&h=283&hcb=2&ved=2ahUKEwjopMzupe6IAxVyHDQIHX1HCRkQM3oECCcQAA",
+            "Dt": [
+                {
+                    "codigo": 2,
+                    "precio": 20,
+                    "caracteristicas": "Naranjas jugosas, variedad Valencia",
+                    "codigo_Producto": 2,
+                    "NombreDelProducto": "Leche Deslactosada"
+                },
+                {
+                    "codigo": 6,
+                    "precio": 16,
+                    "caracteristicas": "Leche entera pasteurizada",
+                    "codigo_Producto": 1,
+                    "NombreDelProducto": "Queso Fresco"
+                },
+                {
+                    "codigo": 15,
+                    "precio": 18,
+                    "caracteristicas": "Miel orgánica pura",
+                    "codigo_Producto": 5,
+                    "NombreDelProducto": "Mantequilla"
+                },
+                {
+                    "codigo": 19,
+                    "precio": 7,
+                    "caracteristicas": "Salsa de tomate natural",
+                    "codigo_Producto": 4,
+                    "NombreDelProducto": "Crema Agria"
+                }
+            ]
         },
         {
             "codigo": 3,
@@ -64,17 +112,41 @@ db.provedores.insertMany(
                 "Avenida": "Zaragoza",
                 "CodigoPostal": 58000
             },
-            "FechaInicioRelacion": "20/8/2019",
+            "FechaInicioRelacion": "20\/8\/2019",
             "RFC": "RAMC801230DEF",
             "correo_electronico": "carlos.ramirez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
             "telefono": "3456789012",
-            "Dt": {
-                "codigo": 3,
-                "precio": 12,
-                "caracteristicas": "Plátanos maduros, sin manchas",
-                "CodigoProducto": 3
-            }
+            "foto": "https:\/\/www.google.com\/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Ffotos-premium%2Ffeliz-alegre-joven-empresario-morena-brazos-cruzados-mirando-al-frente-sonrisa-alegre-encantadora_132358-1597.jpg&tbnid=69ZCTI2h7CvJEM&vet=10CA4QxiAoAWoXChMI2NHn76XuiAMVAAAAAB0AAAAAEBM..i&imgrefurl=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Fpersona-blanca&docid=Ki12db4Gk05wEM&w=626&h=452&itg=1&q=imagenes%20de%20poersonas%20de%20frente&client=opera-gx&ved=0CA4QxiAoAWoXChMI2NHn76XuiAMVAAAAAB0AAAAAEBM",
+            "Dt": [
+                {
+                    "codigo": 3,
+                    "precio": 12,
+                    "caracteristicas": "Plátanos maduros, sin manchas",
+                    "codigo_Producto": 3,
+                    "NombreDelProducto": "Yogur Natural"
+                },
+                {
+                    "codigo": 7,
+                    "precio": 22,
+                    "caracteristicas": "Huevos orgánicos, tamaño grande",
+                    "codigo_Producto": 2,
+                    "NombreDelProducto": "Leche Deslactosada"
+                },
+                {
+                    "codigo": 11,
+                    "precio": 14,
+                    "caracteristicas": "Arroz integral, bajo en calorías",
+                    "codigo_Producto": 1,
+                    "NombreDelProducto": "Queso Fresco"
+                },
+                {
+                    "codigo": 20,
+                    "precio": 12,
+                    "caracteristicas": "Agua mineral con gas",
+                    "codigo_Producto": 5,
+                    "NombreDelProducto": "Mantequilla"
+                }
+            ]
         },
         {
             "codigo": 4,
@@ -87,17 +159,41 @@ db.provedores.insertMany(
                 "Avenida": "López Mateos",
                 "CodigoPostal": 61600
             },
-            "FechaInicioRelacion": "10/7/2022",
+            "FechaInicioRelacion": "10\/7\/2022",
             "RFC": "MARG910312GHI",
             "correo_electronico": "sofia.martinez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
             "telefono": "4567890123",
-            "Dt": {
-                "codigo": 4,
-                "precio": 8,
-                "caracteristicas": "Queso fresco artesanal",
-                "CodigoProducto": 4
-            }
+            "foto": "https:\/\/www.google.com\/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Ffoto-gratis%2Fapuesto-joven-brazos-cruzados-sobre-fondo-blanco_23-2148222620.jpg&tbnid=ME2oeLjA87TSQM&vet=10CAQQxiAoAmoXChMI2NHn76XuiAMVAAAAAB0AAAAAEBM..i&imgrefurl=https%3A%2F%2Fwww.freepik.es%2Ffotos%2Fpersonas&docid=m1WZGxwi5jT5WM&w=626&h=626&itg=1&q=imagenes%20de%20poersonas%20de%20frente&client=opera-gx&ved=0CAQQxiAoAmoXChMI2NHn76XuiAMVAAAAAB0AAAAAEBM",
+            "Dt": [
+                {
+                    "codigo": 4,
+                    "precio": 8,
+                    "caracteristicas": "Queso fresco artesanal",
+                    "codigo_Producto": 4,
+                    "NombreDelProducto": "Crema Agria"
+                },
+                {
+                    "codigo": 8,
+                    "precio": 10,
+                    "caracteristicas": "Mantequilla sin sal, alta calidad",
+                    "codigo_Producto": 3,
+                    "NombreDelProducto": "Yogur Natural"
+                },
+                {
+                    "codigo": 12,
+                    "precio": 11,
+                    "caracteristicas": "Avena en hojuelas, sin gluten",
+                    "codigo_Producto": 2,
+                    "NombreDelProducto": "Leche Deslactosada"
+                },
+                {
+                    "codigo": 16,
+                    "precio": 19,
+                    "caracteristicas": "Café en grano tostado",
+                    "codigo_Producto": 1,
+                    "NombreDelProducto": "Queso Fresco"
+                }
+            ]
         },
         {
             "codigo": 5,
@@ -110,363 +206,48 @@ db.provedores.insertMany(
                 "Avenida": "Hidalgo",
                 "CodigoPostal": 60150
             },
-            "FechaInicioRelacion": "5/11/2018",
+            "FechaInicioRelacion": "5\/11\/2018",
             "RFC": "FELU850405JKL",
             "correo_electronico": "luis.fernandez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
             "telefono": "5678901234",
-            "Dt": {
-                "codigo": 5,
-                "precio": 7,
-                "caracteristicas": "Yogur natural sin azúcar",
-                "CodigoProducto": 5
-            }
-        },
-        {
-            "codigo": 2,
-            "Nombres": "María José",
-            "Apellidos": "López Pérez",
-            "Direccion": {
-                "Localidad": "Jiquilpan",
-                "Estado": "Michoacán",
-                "Colonia": "Centro",
-                "Avenida": "Morelos",
-                "CodigoPostal": 59050
-            },
-            "FechaInicioRelacion": "15/3/2021",
-            "RFC": "LOPM900214ABC",
-            "correo_electronico": "maria.lopez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "2345678901",
-            "Dt": {
-                "codigo": 6,
-                "precio": 16,
-                "caracteristicas": "Leche entera pasteurizada",
-                "CodigoProducto": 1
-            }
-        },
-        {
-            "codigo": 3,
-            "Nombres": "Carlos ",
-            "Apellidos": "Ramírez Soto",
-            "Direccion": {
-                "Localidad": "Morelia",
-                "Estado": "Michoacán",
-                "Colonia": "Juárez",
-                "Avenida": "Zaragoza",
-                "CodigoPostal": 58000
-            },
-            "FechaInicioRelacion": "20/8/2019",
-            "RFC": "RAMC801230DEF",
-            "correo_electronico": "carlos.ramirez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "3456789012",
-            "Dt": {
-                "codigo": 7,
-                "precio": 22,
-                "caracteristicas": "Huevos orgánicos, tamaño grande",
-                "CodigoProducto": 2
-            }
-        },
-        {
-            "codigo": 4,
-            "Nombres": "Sofía Elizabeth",
-            "Apellidos": "Martínez García",
-            "Direccion": {
-                "Localidad": "Pátzcuaro",
-                "Estado": "Michoacán",
-                "Colonia": "La Estación",
-                "Avenida": "López Mateos",
-                "CodigoPostal": 61600
-            },
-            "FechaInicioRelacion": "10/7/2022",
-            "RFC": "MARG910312GHI",
-            "correo_electronico": "sofia.martinez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "4567890123",
-            "Dt": {
-                "codigo": 8,
-                "precio": 10,
-                "caracteristicas": "Mantequilla sin sal, alta calidad",
-                "CodigoProducto": 3
-            }
-        },
-        {
-            "codigo": 5,
-            "Nombres": "Luis Antonio",
-            "Apellidos": "Fernández Díaz",
-            "Direccion": {
-                "Localidad": "Uruapan",
-                "Estado": "Michoacán",
-                "Colonia": "San Juan",
-                "Avenida": "Hidalgo",
-                "CodigoPostal": 60150
-            },
-            "FechaInicioRelacion": "5/11/2018",
-            "RFC": "FELU850405JKL",
-            "correo_electronico": "luis.fernandez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "5678901234",
-            "Dt": {
-                "codigo": 9,
-                "precio": 9,
-                "caracteristicas": "Crema ácida artesanal",
-                "CodigoProducto": 4
-            }
-        },
-        {
-            "codigo": 1,
-            "Nombres": "Juan Pablo",
-            "Apellidos": "González Hernández",
-            "Direccion": {
-                "Localidad": "Sahuayo",
-                "Estado": "Michoacán",
-                "Colonia": "San Onofre",
-                "Avenida": "Santa Inés",
-                "CodigoPostal": 59035
-            },
-            "FechaInicioRelacion": "1/5/2020",
-            "RFC": "GONJ800501XYZ",
-            "correo_electronico": "juan.gonzalez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "1234567890",
-            "Dt": {
-                "codigo": 10,
-                "precio": 6,
-                "caracteristicas": "Pan integral horneado",
-                "CodigoProducto": 5
-            }
-        },
-        {
-            "codigo": 3,
-            "Nombres": "Carlos ",
-            "Apellidos": "Ramírez Soto",
-            "Direccion": {
-                "Localidad": "Morelia",
-                "Estado": "Michoacán",
-                "Colonia": "Juárez",
-                "Avenida": "Zaragoza",
-                "CodigoPostal": 58000
-            },
-            "FechaInicioRelacion": "20/8/2019",
-            "RFC": "RAMC801230DEF",
-            "correo_electronico": "carlos.ramirez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "3456789012",
-            "Dt": {
-                "codigo": 11,
-                "precio": 14,
-                "caracteristicas": "Arroz integral, bajo en calorías",
-                "CodigoProducto": 1
-            }
-        },
-        {
-            "codigo": 4,
-            "Nombres": "Sofía Elizabeth",
-            "Apellidos": "Martínez García",
-            "Direccion": {
-                "Localidad": "Pátzcuaro",
-                "Estado": "Michoacán",
-                "Colonia": "La Estación",
-                "Avenida": "López Mateos",
-                "CodigoPostal": 61600
-            },
-            "FechaInicioRelacion": "10/7/2022",
-            "RFC": "MARG910312GHI",
-            "correo_electronico": "sofia.martinez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "4567890123",
-            "Dt": {
-                "codigo": 12,
-                "precio": 11,
-                "caracteristicas": "Avena en hojuelas, sin gluten",
-                "CodigoProducto": 2
-            }
-        },
-        {
-            "codigo": 5,
-            "Nombres": "Luis Antonio",
-            "Apellidos": "Fernández Díaz",
-            "Direccion": {
-                "Localidad": "Uruapan",
-                "Estado": "Michoacán",
-                "Colonia": "San Juan",
-                "Avenida": "Hidalgo",
-                "CodigoPostal": 60150
-            },
-            "FechaInicioRelacion": "5/11/2018",
-            "RFC": "FELU850405JKL",
-            "correo_electronico": "luis.fernandez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "5678901234",
-            "Dt": {
-                "codigo": 13,
-                "precio": 13,
-                "caracteristicas": "Pasta integral, libre de transgénicos",
-                "CodigoProducto": 3
-            }
-        },
-        {
-            "codigo": 1,
-            "Nombres": "Juan Pablo",
-            "Apellidos": "González Hernández",
-            "Direccion": {
-                "Localidad": "Sahuayo",
-                "Estado": "Michoacán",
-                "Colonia": "San Onofre",
-                "Avenida": "Santa Inés",
-                "CodigoPostal": 59035
-            },
-            "FechaInicioRelacion": "1/5/2020",
-            "RFC": "GONJ800501XYZ",
-            "correo_electronico": "juan.gonzalez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "1234567890",
-            "Dt": {
-                "codigo": 14,
-                "precio": 25,
-                "caracteristicas": "Aceite de oliva virgen extra",
-                "CodigoProducto": 4
-            }
-        },
-        {
-            "codigo": 2,
-            "Nombres": "María José",
-            "Apellidos": "López Pérez",
-            "Direccion": {
-                "Localidad": "Jiquilpan",
-                "Estado": "Michoacán",
-                "Colonia": "Centro",
-                "Avenida": "Morelos",
-                "CodigoPostal": 59050
-            },
-            "FechaInicioRelacion": "15/3/2021",
-            "RFC": "LOPM900214ABC",
-            "correo_electronico": "maria.lopez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "2345678901",
-            "Dt": {
-                "codigo": 15,
-                "precio": 18,
-                "caracteristicas": "Miel orgánica pura",
-                "CodigoProducto": 5
-            }
-        },
-        {
-            "codigo": 4,
-            "Nombres": "Sofía Elizabeth",
-            "Apellidos": "Martínez García",
-            "Direccion": {
-                "Localidad": "Pátzcuaro",
-                "Estado": "Michoacán",
-                "Colonia": "La Estación",
-                "Avenida": "López Mateos",
-                "CodigoPostal": 61600
-            },
-            "FechaInicioRelacion": "10/7/2022",
-            "RFC": "MARG910312GHI",
-            "correo_electronico": "sofia.martinez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "4567890123",
-            "Dt": {
-                "codigo": 16,
-                "precio": 19,
-                "caracteristicas": "Café en grano tostado",
-                "CodigoProducto": 1
-            }
-        },
-        {
-            "codigo": 5,
-            "Nombres": "Luis Antonio",
-            "Apellidos": "Fernández Díaz",
-            "Direccion": {
-                "Localidad": "Uruapan",
-                "Estado": "Michoacán",
-                "Colonia": "San Juan",
-                "Avenida": "Hidalgo",
-                "CodigoPostal": 60150
-            },
-            "FechaInicioRelacion": "5/11/2018",
-            "RFC": "FELU850405JKL",
-            "correo_electronico": "luis.fernandez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "5678901234",
-            "Dt": {
-                "codigo": 17,
-                "precio": 9,
-                "caracteristicas": "Galletas de avena con chispas de chocolate",
-                "CodigoProducto": 2
-            }
-        },
-        {
-            "codigo": 1,
-            "Nombres": "Juan Pablo",
-            "Apellidos": "González Hernández",
-            "Direccion": {
-                "Localidad": "Sahuayo",
-                "Estado": "Michoacán",
-                "Colonia": "San Onofre",
-                "Avenida": "Santa Inés",
-                "CodigoPostal": 59035
-            },
-            "FechaInicioRelacion": "1/5/2020",
-            "RFC": "GONJ800501XYZ",
-            "correo_electronico": "juan.gonzalez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "1234567890",
-            "Dt": {
-                "codigo": 18,
-                "precio": 30,
-                "caracteristicas": "Chocolate amargo, 85% cacao",
-                "CodigoProducto": 3
-            }
-        },
-        {
-            "codigo": 2,
-            "Nombres": "María José",
-            "Apellidos": "López Pérez",
-            "Direccion": {
-                "Localidad": "Jiquilpan",
-                "Estado": "Michoacán",
-                "Colonia": "Centro",
-                "Avenida": "Morelos",
-                "CodigoPostal": 59050
-            },
-            "FechaInicioRelacion": "15/3/2021",
-            "RFC": "LOPM900214ABC",
-            "correo_electronico": "maria.lopez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "2345678901",
-            "Dt": {
-                "codigo": 19,
-                "precio": 15,
-                "caracteristicas": "Salsa de soya, baja en sodio",
-                "CodigoProducto": 4
-            }
-        },
-        {
-            "codigo": 3,
-            "Nombres": "Carlos ",
-            "Apellidos": "Ramírez Soto",
-            "Direccion": {
-                "Localidad": "Morelia",
-                "Estado": "Michoacán",
-                "Colonia": "Juárez",
-                "Avenida": "Zaragoza",
-                "CodigoPostal": 58000
-            },
-            "FechaInicioRelacion": "20/8/2019",
-            "RFC": "RAMC801230DEF",
-            "correo_electronico": "carlos.ramirez@gmail.com",
-            "foto": "https://www.istockphoto.com/es/fotos/persona-de-frente",
-            "telefono": "3456789012",
-            "Dt": {
-                "codigo": 20,
-                "precio": 22,
-                "caracteristicas": "Aderezo para ensaladas, sin gluten",
-                "CodigoProducto": 1
-            }
+            "foto": "https:\/\/www.google.com\/imgres?imgurl=https%3A%2F%2Fus.123rf.com%2F450wm%2Ff8studio%2Ff8studio2112%2Ff8studio211200496%2F179339580-retrato-de-un-joven-cauc%25C3%25A1sico-sonriente-con-los-brazos-cruzados-usando-un-reloj-inteligente-y-una.jpg%3Fver%3D6&tbnid=bHhhoxKbRkRYBM&vet=10CBIQxiAoBGoXChMI2NHn76XuiAMVAAAAAB0AAAAAEBM..i&imgrefurl=https%3A%2F%2Fes.123rf.com%2Fimagenes-de-archivo%2Fretrato_profesional_fondo_blanco_cuerpo_entero.html&docid=mEbWpx9XS08b-M&w=450&h=300&itg=1&q=imagenes%20de%20poersonas%20de%20frente&client=opera-gx&ved=0CBIQxiAoBGoXChMI2NHn76XuiAMVAAAAAB0AAAAAEBM",
+            "Dt": [
+                {
+                    "codigo": 5,
+                    "precio": 7,
+                    "caracteristicas": "Yogur natural sin azúcar",
+                    "codigo_Producto": 5,
+                    "NombreDelProducto": "Mantequilla"
+                },
+                {
+                    "codigo": 9,
+                    "precio": 9,
+                    "caracteristicas": "Crema ácida artesanal",
+                    "codigo_Producto": 4,
+                    "NombreDelProducto": "Crema Agria"
+                },
+                {
+                    "codigo": 13,
+                    "precio": 13,
+                    "caracteristicas": "Pasta integral, libre de transgénicos",
+                    "codigo_Producto": 3,
+                    "NombreDelProducto": "Yogur Natural"
+                },
+                {
+                    "codigo": 17,
+                    "precio": 9,
+                    "caracteristicas": "Galletas de avena con chispas de chocolate",
+                    "codigo_Producto": 2,
+                    "NombreDelProducto": "Leche Deslactosada"
+                },
+                {
+                    "codigo": 21,
+                    "precio": 150,
+                    "caracteristicas": "Descripción del producto",
+                    "codigo_Producto": 3,
+                    "NombreDelProducto": "Yogur Natural"
+                }
+            ]
         }
-            
     ]   
 );

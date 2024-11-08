@@ -3,8 +3,6 @@
 // Número de control: 22420408
 // Universidad: Tecnológico de Jiquilpan 
 // Proyecto: Cremería
-
-// Conectar y usar la base de datos Cremeria
 use("Cremeria");
 
 // Crear la colección con el esquema y validaciones si no existe
@@ -12,47 +10,55 @@ db.createCollection('Ventas', {
     validator: {
         $jsonSchema: {
             bsonType: 'object',
-            required: ['codigo', 'Fecha', 'descuento_aplicado', 'tipo_pago', 'det', 'Pedido'],
+            required: ['venta_codigo', 'fecha_venta', 'descuento_aplicado', 'tipo_pago', 'Pedidos'],
             properties: {
-                codigo: { bsonType: 'int' },
-                Fecha: { 
-                    bsonType: 'string', 
-                    pattern: "^\\d{1,2}\\/\\w+\\/(19\\d{2}|20[0-4]\\d)$" 
+                venta_codigo: { 
+                    bsonType: 'int', 
+                },
+                fecha_venta: { 
+                    bsonType: 'string',
+                    pattern: "^(0?[1-9]|[12][0-9]|3[01])\/([a-zA-Z]+)\/([12][0-9]{3})$"
                 },
                 descuento_aplicado: { 
                     bsonType: 'int', 
-                    minimum: 0 
                 },
                 tipo_pago: { 
-                    bsonType: 'string', 
+                    bsonType: 'string',
                 },
-                det: {
+                Pedidos: {
                     bsonType: 'object',
-                    required: ['codigo', 'descripccion', 'precioUnitario', 'cantidad'],
+                    required: ['codigo', 'descripccion_Pedido'],
                     properties: {
-                        codigo: { bsonType: 'int' },
-                        descripccion: { 
+                        codigo: { 
+                            bsonType: 'int', 
+                        },
+                        descripccion_Pedido: { 
                             bsonType: 'string', 
-                            pattern: "^[A-Za-z0-9À-ÿ -]{5,100}$" 
-                        },
-                        precioUnitario: { 
-                            bsonType: 'int', 
-                            minimum: 0 
-                        },
-                        cantidad: { 
-                            bsonType: 'int', 
-                            minimum: 1 
                         }
                     }
                 },
-                Pedido: {
-                    bsonType: 'object',
-                    required: ['codigo', 'descripccion'],
-                    properties: {
-                        codigo: { bsonType: 'int' },
-                        descripccion: { 
-                            bsonType: 'string', 
-                            pattern: "^[A-Za-z0-9À-ÿ -]{5,200}$" 
+                productos: {
+                    bsonType: 'array',
+                    minItems: 1,
+                    items: {
+                        bsonType: 'object',
+                        required: ['producto_codigo', 'producto_descripcion', 'producto_precio_unitario', 'producto_cantidad', 'producto_nombre'],
+                        properties: {
+                            producto_codigo: { 
+                                bsonType: 'int', 
+                            },
+                            producto_descripcion: { 
+                                bsonType: 'string', 
+                            },
+                            producto_precio_unitario: { 
+                                bsonType: 'int', 
+                            },
+                            producto_cantidad: { 
+                                bsonType: 'int', 
+                            },
+                            producto_nombre: { 
+                                bsonType: 'string', 
+                            }
                         }
                     }
                 }
