@@ -1,0 +1,1 @@
+Buenas tardes profesor  o buenos días anexe el código fuente aquí ya que si se ponen las consultas en sql server las fotos no dejaran que genere todos los json porque la foto son demasiados caracteres en azure es mas recomendable hay sin problemas se podrán generar fácilmente
