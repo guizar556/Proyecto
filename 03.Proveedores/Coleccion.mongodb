@@ -1,6 +1,4 @@
 // Usar la base de datos 
-// Autor: Jonathan Guizar Morales
-// Número de control: 22420408
 // Universidad: Tecnológico de Jiquilpan 
 // Proyecto: Cremería
 use("Cremeria");

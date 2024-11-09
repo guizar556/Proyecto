@@ -1,19 +1,6 @@
-// Usar la base de datos 
-// Autor: Jonathan Guizar Morales
-// Número de control: 22420408
+// Usar la base de datos
 // Universidad: Tecnológico de Jiquilpan 
 // Proyecto: Cremería
-
-// Conectar y usar la base de datos Cremeria
-use("Cremeria");
-
-// Crear la colección con el esquema y validaciones si no existe
-// Usar la base de datos 
-// Autor: Jonathan Guizar Morales
-// Número de control: 22420408
-// Universidad: Tecnológico de Jiquilpan 
-// Proyecto: Cremería
-
 // Conectar y usar la base de datos Cremeria
 use("Cremeria");
 
